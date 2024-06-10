@@ -29,17 +29,33 @@ I am currently studying web design and aspiring to become a full-stack web devel
 
 Here are some of the projects I've worked on:
 
-### Project 1: [Project Name]
-- **Description**: Brief description of the project.
-- **Technologies Used**: List of technologies used in the project.
+### GameGrove
+- **Description**: E-commerce platform to buy games 
+- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind, React.
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/Cybercery/gamegrove])
+- 
 
-### Project 2: [Project Name]
-- **Description**: Brief description of the project.
-- **Technologies Used**: List of technologies used in the project.
+### E-Wallet
+- **Description**: E-commerce platform to buy games 
+- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind.
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/Akshaj05/e-wallet])
+- Deployed on Vercel: https://e-wallet-lilac.vercel.app/
 
-### Project 3: [Project Name]
+### Project Mirage:
+- **Description**: A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation. 
+- **Technologies Used**: HTML, CSS, JS and Python
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/GDSC-NMIMS-MPSTME-Mumbai/project-mirage])
+
+### Titanic Passanger Survival Analysis
+- **Description**: Using Machine learning to calculate the survivability rate of people that embarked on the titanic
+- **Technologies Used**: Python.
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/ashmit27j/Tech-project-modified])
+
+### CodeConnect
 - **Description**: Brief description of the project.
-- **Technologies Used**: List of technologies used in the project.
+- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind, React, Firebase, nextjs, etc.
+- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/codeconnectt/codeconnect])
+
 
 ## Education
 
