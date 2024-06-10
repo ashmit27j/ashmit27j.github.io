@@ -49,9 +49,9 @@ Here are some of the projects I've worked on:
 
 Feel free to reach out to me through the following channels:
 
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:[Your Email])
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([Your LinkedIn Profile])
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([Your GitHub Profile])
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:[ashmit27j@gmail.com])
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/ashmit-jain-386427292/])
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/ashmit27j])
 
 Thank you for visiting my portfolio website. I look forward to connecting with you!
 
