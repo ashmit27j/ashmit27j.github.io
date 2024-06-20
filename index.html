@@ -6,9 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/output.css" />
   </head>
-  <body class="bg-primaryBg">
+  <body class="bg-primaryBg font-body">
     <header
-      class="w-90vw h-fit bg-red flex justify-center align-middle lg:flex"
+      class="w-90vw h-fit bg-red flex justify-center align-middle hidden lg:flex"
     >
       <nav
         class="bg-secondaryBg w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
@@ -38,23 +38,75 @@
       </nav>
     </header>
 
-    <div name="mobile-navbar-alignment-container">
-      <button id="mobile-toggle-button" type="button" class="bg-white p-[5rem]">
-        button
-      </button>
-      <div id="mobile-menu-container" class="mobile-menu-container hidden">
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 1</li>
-          <li>item 2</li>
+    <div
+      name="mobile-navbar-alignment-container"
+      class="fixed bottom-[6rem] right-[1.5rem] lg:hidden"
+    >
+    <div
+    id="mobile-menu-container"
+    class="mobile-menu-container hidden md:block sm:block"
+  >
+    <ul class="flex flex-col gap-[1.5rem]">
+      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+        <a href=""><img src="src/assets/images/portfolio.png" alt="Portfolio Image" class = "w-[1.5rem] h-[1.5rem]"></a>
+      </li>
+      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+        <a href=""><img src="src/assets/images/about-me.png" alt="about me" class = "w-[1.5rem] h-[1.5rem]"></a>
+      </li>
+      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
+        <a href=""><img src="src/assets/images/projects.png" alt="projects" class = "w-[1.5rem] h-[1.5rem]"></a>
+      </li>
+      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" 
+      ">
+        <a href=""><img src="src/assets/images/cv.png" alt="CV" class = "w-[1.5rem] h-[1.5rem]"></a>
+      </li>
+    </ul>
+  </div>
+  <button
+    id="mobile-toggle-button"
+    type="button"
+    class="bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
+  >
+    <img
+      src="src/assets/images/menu-toggle.svg"
+      alt="menu-toggle-button"
+      class="w-[1.5rem] h-[1.5rem]"
+    />
+  </button>
+</div>
+    </div>
+    
+    <!-- <div
+        id="mobile-menu-container"
+        class="mobile-menu-container hidden md:block sm:block"
+      >
+        <ul class="flex flex-col gap-[1.5rem]">
+          <li class="bg-white w-fit px-5 py-2 rounded-full text-sm ml-auto">
+            Portfolio Page
+          </li>
+          <li class="bg-white w-fit px-5 py-2 rounded-full text-sm ml-auto">
+            About Me
+          </li>
+          <li class="bg-white w-fit px-5 py-2 rounded-full text-sm ml-auto">
+            Projects
+          </li>
+          <li class="bg-white w-fit px-5 py-2 rounded-full text-sm ml-auto">
+            CV
+          </li>
         </ul>
       </div>
-    </div>
+      <button
+        id="mobile-toggle-button"
+        type="button"
+        class="bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
+      >
+        <img
+          src="src/assets/images/menu-toggle.svg"
+          alt="menu-toggle-button"
+          class="w-[1.5rem] h-[1.5rem]"
+        />
+      </button>
+    </div> -->
     <script>
       document
         .getElementById("mobile-toggle-button")

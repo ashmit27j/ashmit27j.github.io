@@ -1,0 +1,31 @@
+<div
+        id="mobile-menu-container"
+        class="mobile-menu-container hidden md:block sm:block"
+      >
+        <ul class="flex flex-col gap-[1.5rem]">
+          <li class="bg-white text-center px-5 py-2 rounded-full text-sm">
+            Portfolio Page
+          </li>
+          <li class="bg-white text-center px-5 py-2 rounded-full text-sm">
+            About Me
+          </li>
+          <li class="bg-white text-center px-5 py-2 rounded-full text-sm">
+            Projects
+          </li>
+          <li class="bg-white text-center px-5 py-2 rounded-full text-sm">
+            CV
+          </li>
+        </ul>
+      </div>
+      <button
+        id="mobile-toggle-button"
+        type="button"
+        class="bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
+      >
+        <img
+          src="src/assets/images/menu-toggle.svg"
+          alt="menu-toggle-button"
+          class="w-[1.5rem] h-[1.5rem]"
+        />
+      </button>
+    </div>
