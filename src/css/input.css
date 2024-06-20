@@ -5,3 +5,7 @@
   font-family: "Quicksand";
   src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "HelveticaCompressed";
+  src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
+}
