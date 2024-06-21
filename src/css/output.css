@@ -578,12 +578,21 @@ video {
   z-index: 10;
 }
 
-.m-5 {
-  margin: 1.25rem;
+.z-0 {
+  z-index: 0;
 }
 
 .m-0 {
   margin: 0px;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .block {
@@ -602,8 +611,20 @@ video {
   height: 1.5rem;
 }
 
+.h-\[100rem\] {
+  height: 100rem;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
 .h-\[5rem\] {
   height: 5rem;
+}
+
+.h-\[6rem\] {
+  height: 6rem;
 }
 
 .h-auto {
@@ -613,26 +634,6 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-\[2rem\] {
-  height: 2rem;
-}
-
-.h-\[3rem\] {
-  height: 3rem;
-}
-
-.h-\[10rem\] {
-  height: 10rem;
-}
-
-.h-\[1rem\] {
-  height: 1rem;
 }
 
 .w-\[1\.5rem\] {
@@ -709,20 +710,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-grey-white-transparent {
+  background-image: linear-gradient(to right, rgba(255, 255, 253, 0.4), rgba(255, 255, 253, 0.3), rgba(255, 255, 255, 0.1));
+}
+
 .bg-clip-content {
   background-clip: content-box;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-10 {
   padding: 2.5rem;
 }
 
-.p-\[1rem\] {
-  padding: 1rem;
+.p-5 {
+  padding: 1.25rem;
 }
 
-.p-0 {
-  padding: 0px;
+.p-\[1rem\] {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -730,13 +739,14 @@ video {
   padding-right: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pt-\[5rem\] {
-  padding-top: 5rem;
 }
 
 .pt-\[2rem\] {
@@ -759,8 +769,8 @@ video {
   font-family: HelveticaCompressed, Times New Roman;
 }
 
-.text-\[8rem\] {
-  font-size: 8rem;
+.text-\[4\.5rem\] {
+  font-size: 4.5rem;
 }
 
 .text-sm {
@@ -802,19 +812,19 @@ video {
   font-weight: 600;
 }
 
-@media (min-width: 640px) {
-  .sm\:block {
-    display: block;
+@media (min-width: 500px) {
+  .xs\:h-\[10rem\] {
+    height: 10rem;
   }
 
-  .sm\:flex {
-    display: flex;
+  .xs\:text-\[7rem\] {
+    font-size: 7rem;
   }
 }
 
-@media (min-width: 768px) {
-  .md\:flex {
-    display: flex;
+@media (min-width: 640px) {
+  .sm\:text-\[8rem\] {
+    font-size: 8rem;
   }
 }
 
@@ -833,5 +843,19 @@ video {
 
   .lg\:pt-\[5rem\] {
     padding-top: 5rem;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:hidden {
+    display: none;
   }
 }

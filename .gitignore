@@ -8,7 +8,7 @@ package.json
 postcss.config.js
 
 # Ignore tailwind.config.js
-tailwind.config.js
+# tailwind.config.js
 
 # Ignore node_modules directory
 node_modules/
