@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/src/css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-primaryBg font-body">
+  <body class="bg-primaryBg font-body overflow-x-hidden">
     <header
-      class="w-90vw h-fit hidden justify-center align-middle lg:flex"
+      class="w-90vw h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
       <nav
-        class="bg-secondaryBg shadow-lg w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
+        class="bg-secondaryBg shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
       >
-        <button type="button" class="bg-white text-white px-4 py-3 rounded-xl">
+        <button type="button" class="bg-white text-white  px-4 py-3 rounded-xl">
           <!-- hidden div for alignment -->
           Get in touch
         </button>
@@ -40,7 +41,7 @@
 
     <div
       name="mobile-navbar-alignment-container"
-      class="fixed bottom-[6rem] right-[1.5rem] lg:hidden"
+      class="fixed bottom-[6rem] right-[1.5rem] lg:hidden z-50"
     >
     <div
     id="mobile-menu-container"
@@ -84,13 +85,13 @@
     </div>
     <div
       name="mobile-link-alignment-container"
-      class="fixed bottom-[6rem] left-[1.5rem] lg:hidden"
+      class="fixed z-50 bottom-[6rem] left-[1.5rem] lg:hidden"
     >
     <div
     id="mobile-link-container"
-    class="z-10 hidden "
+    class=" hidden "
   >
-    <ul class="z-10 flex flex-col gap-[1.5rem]">
+    <ul class="  flex flex-col gap-[1.5rem]">
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
         <a href="">
           <svg class="h-[1.5rem] w-[1.5rem]" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,21 +125,47 @@
   <button
     id="link-toggle-button"
     type="button"
-    class=" z-10 bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] left-[1.5rem]"
+    class=" bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] left-[1.5rem]"
   >
  <img src="src/assets/images/links.svg" id="link-dark" alt="" class="h-[1.5rem] w-[1.5rem]">
  <img src="src/assets/images/link-white.svg" id="link-white" alt="" class="h-[1.5rem] w-[1.5rem] hidden">
   </button>
 </div>
     </div>
-    <section name = "hero-banner" class="h-fit bg-clip-content overflow-clip">
-      <div name = "text-alignment" class=" z-0 lg:text-right flex flex-col justify-center text-center">
-        <span class=" font-heading text-[4.5rem] sm:text-[8rem] xs:text-[7rem] p-0 m-0 h-[6rem] xs:h-[10rem]">ASHMIT JAIN</span>
-        <span>UI Designer & Web Developer</span>
+    <section name = "hero-banner" class="h-fit pt-[1rem] bg-clip-content overflow-clip">
+      
+      <div name = "except-lg" class="lg:hidden p-10 flex flex-col items-center">
+      <span class="text-[0.8rem]">UI Designer & Web Developer</span>
+      <img src="src/assets/images/Name-light.svg" class="lg:w-[50rem]" alt="My Name as an svg">
+      <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
+      </div>
+
+      <div name = "text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10  text-center lg:text-right lg:flex flex-col lg:pr-[2rem] justify-center">
+        <div name = "outer-text div" class=" flex flex-col items-end">
+          <div class="w-fit">
+              <div name = " inner-title div" class="hidden lg:flex">
+              <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
+                <div class=" w-full my-auto flex pl-[0.5rem]">
+                  <img src="src/assets/images/circle2.svg" alt="">
+                  <div class=" bg-black w-full h-[0.125rem] my-auto"></div>
+                </div>
+            </div>
+            <span class="lg:hidden">UI Designer & Web Developer</span>
+            <img src="src/assets/images/Name-light.svg" class="lg:w-[50rem]" alt="My Name as an svg">
+        
+          </div>
+          <span class="flex self-start w-full">
+            <div class=" w-full my-auto flex pl-[0.5rem]">
+                <div class=" bg-black w-full h-[0.125rem] ml-[35.9rem] my-auto"></div>
+                <img src="src/assets/images/circle2.svg" alt="">
+              </div>
+                <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Head of UI/UX at GDSC MPSTME</span>
+          </span>
+          </div>
       </div>
       
-      <div name = "image-alignment-container" class="z-10">
-        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class="w-full lg:w-[40rem] pt-[2rem] lg:pt-[5rem] h-auto">
+      <div name = "image-alignment-container" class=" relative z-100">
+        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class="  w-full lg:w-[40rem] lg:pt-[5rem] h-auto">
       </div>
       <div></div>
     </section>
