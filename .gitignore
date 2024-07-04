@@ -1,9 +1,3 @@
-# Ignore package-lock.json
-package-lock.json
-
-# Ignore package.json
-package.json
-
 # Ignore postcss.config.js
 postcss.config.js
 

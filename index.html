@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/css/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+      html{
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+      }
+      section{
+        scroll-snap-align: start;
+      }
+    </style>
   </head>
   <body class="bg-primaryBg font-body overflow-x-hidden">
     <header
@@ -14,11 +23,11 @@
       <nav
         class="bg-secondaryBg shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
       >
-        <button type="button" class="bg-white text-white  px-4 py-3 rounded-xl">
+        <button type="button" class="bg-white text-white bg  px-4 py-3 rounded-xl ">
           <!-- hidden div for alignment -->
           Get in touch
         </button>
-        <ul class="flex justify-between gap-10">
+        <ul class="flex justify-between gap-10 bg-">
           <li>
             <a href="index.html" class="font-bold">Portfolio</a>
           </li>
@@ -33,19 +42,47 @@
           <li><a href="" class="hover:font-semibold">Download CV</a></li>
           <!-- downloadable link to my cv, or directly start download -->
         </ul>
-        <button type="button" class="bg-black text-white px-4 py-3 rounded-xl">
+        <button type="button" class="bg-black text-white px-4 py-3 rounded-xl hover:bg-red">
           Get in touch
         </button>
       </nav>
     </header>
+    <!-- bottom socials link bar desktop -->
+     <div
+      class="w-full h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50 lg:bottom-0"
+    >
+      <nav
+        class="bg-secondaryBg shadow-lg  w-fit h-[5rem] p-3 m-5 flex justify-between align-middle items-center rounded-full font-body font-medium"
+      >
+        <ul class="flex justify-between gap-3">
+          <button type="button" class="bg-[#FAFAFA] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.linkedin.com/in/ashmit-jain-386427292/'">
+            <img src="src/assets/images/linkedin.svg" class="w-6 h-6" alt="linkedinLogo">
+          </button>
+          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.figma.com/@ashmit4'">
+            <img src="src/assets/images/figma.svg" class="w-6 h-6" alt="figmaLogo">
+          </button>
+          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://github.com/ashmit27j'">
+            <img src="src/assets/images/github.svg" class="w-6 h-6" alt="githubLogo">
+          </button>
+          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.instagram.com/ashmit27j/'">
+            <img src="src/assets/images/instagram.svg" class="w-6 h-6" alt="instagramLogo">
+          </button>
+        </ul>
+      </nav>
+    </div>
+    <!-- mobile navbar -->
+    
 
-    <div
+    </div>
+    <!-- gradient div -->
+    <div class=" lg:hidden fixed w-full h-[10rem] z-50 bottom-0 bg-gradient-to-t from-[rgb(0,0,0)] via-[rgba(0,0,0,0.9)]  to-[rgba(217,220,223,0)]">
+      <div
       name="mobile-navbar-alignment-container"
-      class="fixed bottom-[6rem] right-[1.5rem] lg:hidden z-50"
+      class="fixed z-50 bottom-[6rem] right-[1.5rem] lg:hidden "
     >
     <div
     id="mobile-menu-container"
-    class="mobile-menu-container hidden "
+    class="hidden "
   >
     <ul class="flex flex-col gap-[1.5rem]">
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
@@ -57,13 +94,12 @@
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
         <a href=""><img src="src/assets/images/projects.png" alt="projects" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" 
-      ">
+      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
         <a href=""><img src="src/assets/images/cv.png" alt="CV" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
     </ul>
   </div>
-  <button
+        <button
     id="mobile-toggle-button"
     type="button"
     class="bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
@@ -83,6 +119,7 @@
   </button>
 </div>
     </div>
+    <!-- mobile social link bar -->
     <div
       name="mobile-link-alignment-container"
       class="fixed z-50 bottom-[6rem] left-[1.5rem] lg:hidden"
@@ -93,32 +130,23 @@
   >
     <ul class="  flex flex-col gap-[1.5rem]">
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
-        <a href="">
-          <svg class="h-[1.5rem] w-[1.5rem]" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.4802 3.2002H25.9202C31.0402 3.2002 35.2002 7.3602 35.2002 12.4802V25.9202C35.2002 28.3814 34.2225 30.7418 32.4821 32.4821C30.7418 34.2225 28.3814 35.2002 25.9202 35.2002H12.4802C7.3602 35.2002 3.2002 31.0402 3.2002 25.9202V12.4802C3.2002 10.019 4.17791 7.65858 5.91824 5.91824C7.65858 4.17791 10.019 3.2002 12.4802 3.2002ZM12.1602 6.4002C10.6325 6.4002 9.16747 7.00705 8.08726 8.08726C7.00705 9.16747 6.4002 10.6325 6.4002 12.1602V26.2402C6.4002 29.4242 8.9762 32.0002 12.1602 32.0002H26.2402C27.7678 32.0002 29.2329 31.3933 30.3131 30.3131C31.3933 29.2329 32.0002 27.7678 32.0002 26.2402V12.1602C32.0002 8.9762 29.4242 6.4002 26.2402 6.4002H12.1602ZM27.6002 8.8002C28.1306 8.8002 28.6393 9.01091 29.0144 9.38598C29.3895 9.76105 29.6002 10.2698 29.6002 10.8002C29.6002 11.3306 29.3895 11.8393 29.0144 12.2144C28.6393 12.5895 28.1306 12.8002 27.6002 12.8002C27.0698 12.8002 26.5611 12.5895 26.186 12.2144C25.8109 11.8393 25.6002 11.3306 25.6002 10.8002C25.6002 10.2698 25.8109 9.76105 26.186 9.38598C26.5611 9.01091 27.0698 8.8002 27.6002 8.8002ZM19.2002 11.2002C21.3219 11.2002 23.3568 12.0431 24.857 13.5433C26.3573 15.0436 27.2002 17.0785 27.2002 19.2002C27.2002 21.3219 26.3573 23.3568 24.857 24.857C23.3568 26.3573 21.3219 27.2002 19.2002 27.2002C17.0785 27.2002 15.0436 26.3573 13.5433 24.857C12.0431 23.3568 11.2002 21.3219 11.2002 19.2002C11.2002 17.0785 12.0431 15.0436 13.5433 13.5433C15.0436 12.0431 17.0785 11.2002 19.2002 11.2002ZM19.2002 14.4002C17.9272 14.4002 16.7063 14.9059 15.8061 15.8061C14.9059 16.7063 14.4002 17.9272 14.4002 19.2002C14.4002 20.4732 14.9059 21.6941 15.8061 22.5943C16.7063 23.4945 17.9272 24.0002 19.2002 24.0002C20.4732 24.0002 21.6941 23.4945 22.5943 22.5943C23.4945 21.6941 24.0002 20.4732 24.0002 19.2002C24.0002 17.9272 23.4945 16.7063 22.5943 15.8061C21.6941 14.9059 20.4732 14.4002 19.2002 14.4002Z" fill="black"/>
-            </svg>            
+        <a href="https://www.instagram.com/ashmit27j/">
+             <img src="src/assets/images/instagram.svg" class="w-[1.5rem] h-[1.5rem]" alt="">     
         </a>
       </li>
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
-        <a href="">
-          <svg class="h-[1.5rem] w-[1.5rem]"viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.4 3.2016C6.39958 4.05029 6.06203 4.86406 5.46161 5.46387C4.86119 6.06369 4.04709 6.40043 3.1984 6.4C2.34971 6.39958 1.53594 6.06203 0.936127 5.46161C0.336311 4.86119 -0.000423946 4.04709 4.00578e-07 3.1984C0.000424747 2.34971 0.337974 1.53594 0.93839 0.936127C1.53881 0.336311 2.35291 -0.000423946 3.2016 4.00578e-07C4.05029 0.000424747 4.86406 0.337974 5.46387 0.93839C6.06369 1.53881 6.40043 2.35291 6.4 3.2016ZM6.496 8.7696H0.0960003V28.8016H6.496V8.7696ZM16.608 8.7696H10.24V28.8016H16.544V18.2896C16.544 12.4336 24.176 11.8896 24.176 18.2896V28.8016H30.496V16.1136C30.496 6.2416 19.2 6.6096 16.544 11.4576L16.608 8.7696Z" fill="black"/>
-            </svg>
+        <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
+          <img src="src/assets/images/linkedin.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
         </a>
       </li>
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
-        <a href=""><svg class="h-[1.5rem] w-[1.5rem] viewBox="0 0 22 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10.6001 15.4001C10.6001 16.6731 11.1058 17.894 12.006 18.7942C12.9062 19.6944 14.1271 20.2001 15.4001 20.2001C16.6731 20.2001 17.894 19.6944 18.7942 18.7942C19.6944 17.894 20.2001 16.6731 20.2001 15.4001C20.2001 14.1271 19.6944 12.9062 18.7942 12.006C17.894 11.1058 16.6731 10.6001 15.4001 10.6001C14.1271 10.6001 12.9062 11.1058 12.006 12.006C11.1058 12.9062 10.6001 14.1271 10.6001 15.4001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M1 5.8C1 4.52696 1.50571 3.30606 2.40589 2.40589C3.30606 1.50571 4.52696 1 5.8 1H15.4C16.673 1 17.8939 1.50571 18.7941 2.40589C19.6943 3.30606 20.2 4.52696 20.2 5.8C20.2 7.07304 19.6943 8.29394 18.7941 9.19411C17.8939 10.0943 16.673 10.6 15.4 10.6H5.8C4.52696 10.6 3.30606 10.0943 2.40589 9.19411C1.50571 8.29394 1 7.07304 1 5.8Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M5.8 10.6C4.52696 10.6 3.30606 11.1057 2.40589 12.0059C1.50571 12.9061 1 14.127 1 15.4C1 16.673 1.50571 17.8939 2.40589 18.7941C3.30606 19.6943 4.52696 20.2 5.8 20.2M5.8 20.2H10.6M5.8 20.2C4.85065 20.2 3.92262 20.4815 3.13326 21.0089C2.34391 21.5364 1.72868 22.286 1.36538 23.1631C1.00208 24.0402 0.907024 25.0053 1.09223 25.9364C1.27744 26.8675 1.7346 27.7228 2.40589 28.3941C3.07718 29.0654 3.93246 29.5226 4.86357 29.7078C5.79468 29.893 6.7598 29.7979 7.63688 29.4346C8.51397 29.0713 9.26363 28.4561 9.79106 27.6667C10.3185 26.8774 10.6 25.9494 10.6 25V1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+        <a href="https://www.figma.com/@ashmit4"><img src="src/assets/images/figma.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
           </a>
       </li>
       <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
-        <a href=""><svg class="h-[1.5rem] w-[1.5rem]" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M19.2 0C16.6786 0 14.1819 0.508952 11.8525 1.4978C9.52303 2.48664 7.40643 3.93602 5.62355 5.76317C2.02285 9.45326 0 14.4581 0 19.6767C0 28.3738 5.5104 35.7525 13.1328 38.3695C14.0928 38.5269 14.4 37.917 14.4 37.3857V34.0603C9.0816 35.2409 7.9488 31.4237 7.9488 31.4237C7.0656 29.1412 5.8176 28.5312 5.8176 28.5312C4.0704 27.3112 5.952 27.3506 5.952 27.3506C7.872 27.4883 8.8896 29.3773 8.8896 29.3773C10.56 32.3681 13.3824 31.4827 14.4768 31.0104C14.6496 29.7315 15.1488 28.8657 15.6864 28.3738C11.424 27.8819 6.9504 26.1897 6.9504 18.6928C6.9504 16.5087 7.68 14.7575 8.928 13.3605C8.736 12.8685 8.064 10.8222 9.12 8.16582C9.12 8.16582 10.7328 7.63455 14.4 10.1728C15.9168 9.73996 17.568 9.52351 19.2 9.52351C20.832 9.52351 22.4832 9.73996 24 10.1728C27.6672 7.63455 29.28 8.16582 29.28 8.16582C30.336 10.8222 29.664 12.8685 29.472 13.3605C30.72 14.7575 31.4496 16.5087 31.4496 18.6928C31.4496 26.2093 26.9568 27.8622 22.6752 28.3541C23.3664 28.9641 24 30.1643 24 31.9943V37.3857C24 37.917 24.3072 38.5466 25.2864 38.3695C32.9088 35.7328 38.4 28.3738 38.4 19.6767C38.4 17.0927 37.9034 14.534 36.9385 12.1467C35.9736 9.75945 34.5593 7.59031 32.7765 5.76317C30.9936 3.93602 28.877 2.48664 26.5475 1.4978C24.2181 0.508952 21.7214 0 19.2 0Z" fill="black"/>
-          </svg>
-</a>
+        <a href="https://github.com/ashmit27j">
+          <img src="src/assets/images/github.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
+        </a>
       </li>
     </ul>
   </div>
@@ -132,15 +160,15 @@
   </button>
 </div>
     </div>
-    <section name = "hero-banner" class="h-fit pt-[1rem] bg-clip-content overflow-clip">
-      
+    <section name = "hero-banner" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip">
+      <!-- Will display for viewports that arent lg or xl -->
       <div name = "except-lg" class="lg:hidden p-10 flex flex-col items-center">
       <span class="text-[0.8rem]">UI Designer & Web Developer</span>
       <img src="src/assets/images/Name-light.svg" class="lg:w-[50rem]" alt="My Name as an svg">
       <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
       </div>
-
-      <div name = "text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10  text-center lg:text-right lg:flex flex-col lg:pr-[2rem] justify-center">
+      <!-- will display for lg and above -->
+      <div name = "text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
         <div name = "outer-text div" class=" flex flex-col items-end">
           <div class="w-fit">
               <div name = " inner-title div" class="hidden lg:flex">
@@ -151,7 +179,7 @@
                 </div>
             </div>
             <span class="lg:hidden">UI Designer & Web Developer</span>
-            <img src="src/assets/images/Name-light.svg" class="lg:w-[50rem]" alt="My Name as an svg">
+            <img src="src/assets/images/Name-light.svg" class="w-[50rem]" alt="My Name as an svg">
         
           </div>
           <span class="flex self-start w-full">
@@ -162,20 +190,24 @@
                 <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Head of UI/UX at GDSC MPSTME</span>
           </span>
           </div>
+          <div class="flex flex-col bottom-[2rem] self-end absolute">
+            <img src="src/assets/images/scroll-down.svg" class="w-[1rem] self-end" alt="">
+            <img src="src/assets/images/circle2.svg" class="w-[1rem]" alt="">
+          </div>
       </div>
       
       <div name = "image-alignment-container" class=" relative z-100">
-        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class="  w-full lg:w-[40rem] lg:pt-[5rem] h-auto">
+        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[40rem] lg:pt-[5rem]">
       </div>
       <div></div>
     </section>
-    <section class="bg-black h-[100rem]">
-      <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
+    <section class="bg-black h-[100rem] lg:pt-[10rem]">
+      <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
         <span>aa</span>
         <span>scroll up</span>
-      </div>
-      <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center mx-10">
-        <span class=" text-white font-heading text-[4.5rem] sm:text-[8rem] xs:text-[7rem] p-0 m-0 h-[6rem] xs:h-[10rem]">PROJECTS</span>
+      </div> -->
+      <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center mx-5 pt-5">
+        <img src="src/assets/images/projects.svg" class="w-[40rem]" alt="projects">
         <div name = "project-container" class = "flex flex-col align-middle gap-10 py-10 ">
           <div class="w-full bg-grey-white-transparent h-fit p-5">aa</div>
         </div>
