@@ -35,6 +35,7 @@ module.exports = {
 			},
 			fontFamily: {
 				heading: ["HelveticaCompressed", "Times New Roman"],
+				subHeading: ["Lufga", "Times New Roman"],
 				body: ["Quicksand", "arial", "sans-serif"],
 			},
 			fontSize: {

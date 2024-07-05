@@ -9,3 +9,7 @@
   font-family: "HelveticaCompressed";
   src: url("../assets/fonts/Helvetica\ Extra\ Compressed\ Regular.otf");
 }
+@font-face {
+  font-family: "Lufga";
+  src: url("../assets/fonts/Lufga-Regular.otf");
+}
