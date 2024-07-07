@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="icon" type="image/png/svg" href="src/assets/images/logo.svg" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
       html{
+        caret-color: transparent;
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
       }
@@ -16,7 +18,7 @@
       }
     </style>
   </head>
-  <body class="bg-primaryBg font-body overflow-x-hidden">
+  <body class="bg-darkModeBg font-body overflow-x-hidden">
     <header
       class="w-90vw h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
@@ -29,22 +31,22 @@
         </button>
         <ul class="flex justify-between gap-10 bg-">
           <li>
-            <a href="index.html" class="font-bold">Portfolio</a>
+            <a href="#portfolio" class="hover:font-semibold" >Portfolio</a>
           </li>
           <!-- main page with hyperlinks to socials and brief description -->
           <p>|</p>
-          <li class=""><a href="" class="hover:font-semibold">About Me</a></li>
+          <li class=""><a href="#aboutme" class="hover:font-semibold">About Me</a></li>
           <!-- about me page with stuff about me -->
           <p>|</p>
-          <li><a href="" class="hover:font-semibold">Projects</a></li>
+          <li><a href="#projects" class="hover:font-semibold">Projects</a></li>
           <!-- prrojects.html page with a list of my projects, links to github and stuff -->
           <p>|</p>
-          <li><a href="" class="hover:font-semibold">Download CV</a></li>
+          <li><a href="#downloadcv" class="hover:font-semibold">Download CV</a></li>
           <!-- downloadable link to my cv, or directly start download -->
         </ul>
-        <button type="button" class="bg-black text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black">
+        <a type="button" class="bg-black text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
           Get in touch
-        </button>
+        </a>
       </nav>
     </header>
     <!-- bottom socials link bar desktop -->
@@ -160,11 +162,11 @@
   </button>
 </div>
     </div>
-    <section name = "hero-banner" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip">
+    <section id="portfolio" name = "hero-banner" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-white">
       <!-- Will display for viewports that arent lg or xl -->
       <div name = "except-lg" class="lg:hidden p-10 flex flex-col items-center">
       <span class="text-[0.8rem]">UI Designer & Web Developer</span>
-      <img src="src/assets/images/Name-light.svg" class="lg:w-[50rem]" alt="My Name as an svg">
+      <img src="src/assets/images/Name-dark.svg" class="lg:w-[50rem]" alt="My Name as an svg">
       <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
       <span class="text-[0.8rem]">Employed as a UI Designer at Synoris</span>
       </div>
@@ -176,16 +178,16 @@
               <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
                 <div class=" w-full my-auto flex pl-[0.5rem]">
                   <img src="src/assets/images/circle2.svg" alt="">
-                  <div class=" bg-black w-full h-[0.125rem] my-auto"></div>
+                  <div class=" bg-white w-full h-[0.125rem] my-auto"></div>
                 </div>
             </div>
             <span class="lg:hidden">UI Designer & Web Developer</span>
-            <img src="src/assets/images/Name-light.svg" class="w-[50rem]" alt="My Name as an svg">
+            <img src="src/assets/images/Name-dark.svg" class="w-[50rem] py-[2rem]" alt="My Name as an svg">
         
           </div>
           <span class="flex self-start w-full">
             <div class=" w-full my-auto flex pl-[0.5rem]">
-                <div class=" bg-black w-full h-[0.125rem] ml-[35.9rem] my-auto"></div>
+                <div class=" bg-white w-full h-[0.125rem] ml-[39.9rem] my-auto"></div>
                 <img src="src/assets/images/circle2.svg" alt="">
               </div>
                 <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Head of UI/UX at GDSC MPSTME</span>
@@ -198,18 +200,18 @@
                 <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Employed as a UI Designer at Synoris</span>
           </span>
           </div>
-          <div class="flex flex-col bottom-[2rem] self-end absolute">
-            <img src="src/assets/images/scroll-down.svg" class="w-[1rem] self-end" alt="">
+          <div class="flex flex-col bottom-[2rem] items-center self-end absolute">
+            <img src="src/assets/images/scroll-down.svg" class="w-[1.5rem] self-end" alt="">
             <img src="src/assets/images/circle2.svg" class="w-[1rem]" alt="">
           </div>
       </div>
       
       <div name = "image-alignment-container" class=" relative z-100">
-        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[40rem] lg:pt-[5rem]">
+        <img src="src/assets/images/Ashmit-pfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[45rem] lg:pt-[5rem]">
       </div>
       <div></div>
     </section>
-    <section class="bg-black min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
+    <section id="projects" class="bg-darkModeBg min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
       <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
         <span>aa</span>
         <span>scroll up</span>
@@ -264,15 +266,15 @@
         </div>
       </div>
     </section>
-    <section class="bg-black min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
+    <section id = "aboutme" class="bg-black min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[6.5rem]">
       <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
         <span>aa</span>
         <span>scroll up</span>
       </div> -->
       <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
-          <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:p-[1.25rem]" alt="projects">
-          <span class="hidden lg:block text-white w-[90vw] p-[2.5rem] lg:p-[1.25rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
+          <img src="src/assets/images/aboutMeDesktop.svg" class="lg:w-[35rem] p-[2.5rem] lg:p-[1.25rem]" alt="projects">
+          <span class="hidden lg:block text-white w-[30vw] p-[2.5rem] lg:p-[1.25rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
           </span>
         </div>
       </div>
