@@ -20,7 +20,7 @@
   </head>
   <body class="bg-darkModeBg font-body overflow-x-hidden">
     <header
-      class="w-90vw h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
+      class="w-full  h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
       <nav
         class="bg-secondaryBg shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
@@ -44,7 +44,7 @@
           <li><a href="#downloadcv" class="hover:font-semibold">Download CV</a></li>
           <!-- downloadable link to my cv, or directly start download -->
         </ul>
-        <a type="button" class="bg-black text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
+        <a type="button" class="bg-darkModeBg text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
           Get in touch
         </a>
       </nav>
@@ -211,46 +211,48 @@
       </div>
       <div></div>
     </section>
-    <section id="projects" class="bg-darkModeBg min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
+    <!-- =============================================================== -->
+    <section id="projects" class="mx-[1.5rem] bg-darkModeBg min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
       <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
         <span>aa</span>
         <span>scroll up</span>
       </div> -->
       <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
-          <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:p-[1.25rem]" alt="projects">
-          <span class="hidden lg:block text-white w-[90vw] p-[2.5rem] lg:p-[1.25rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
+          <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:px-0" alt="projects">
+          <span class="hidden lg:block text-white w-[90vw] p-[2.5rem] lg:px-[2rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
           </span>
         </div>
-        <div name = "project-container" class = "flex flex-col align-middle gap-10 mx-[1.25rem] ">
+        <!-- new grid layout -->
+        <div name = "project-container" class = "grid grid-cols-1 lg:grid-cols-3 gap-10 pt-[0.75rem]">
           <!-- project 1 Div -->
           <a href="">
-            <div class="w-full Ah-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
-              <div class="flex place-content-between ">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
                 <div class="my-auto flex gap-3">
                   <img src="src/assets/images/figma-circle.svg" class="w-[3rem]" alt="">
                 </div>
               </div>
-              <span class="text-left">We developed a booking system that schedules appointments based on user convenience and visit severity, displaying available doctors, a medical records system with patient and doctor interfaces for uploading, reviewing, and managing records.</span>
-            </div>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a booking system that schedules appointments based on user convenience and visit severity, displaying available doctors, a medical records system with patient and doctor interfaces for uploading, reviewing, and managing records.</span>  
+            </div>  
           </a>
           <!-- project 2 div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
-              <div class="flex place-content-between ">
-                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML Project</p>
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
                 <div class="my-auto flex gap-3">
                   <img src="src/assets/images/python-circle.svg" class="w-[3rem]" alt="">
                 </div>
               </div>
-              <span class="text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
             </div>
           </a>
-          <!-- project 3 div -->
+           <!-- project 3 div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
-              <div class="flex place-content-between ">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
                 <div class="my-auto flex gap-3">
                   <img src="src/assets/images/html-circle.svg" class="w-[3rem]" alt="">
@@ -258,15 +260,53 @@
                   <img src="src/assets/images/js-circle.svg" class="w-[3rem]" alt="">
                 </div>
               </div>
-              <span class="text-left">A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation.</span>
+              <span class="font-body text-[1rem] w-[85%] text-left"">A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation.</span>
             </div>
           </a>
-          
-            
+          <!-- project 1 Div -->
+          <a href="">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/figma-circle.svg" class="w-[3rem]" alt="">
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a booking system that schedules appointments based on user convenience and visit severity, displaying available doctors, a medical records system with patient and doctor interfaces for uploading, reviewing, and managing records.</span>  
+            </div>  
+          </a>
+          <!-- project 2 div -->
+          <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/python-circle.svg" class="w-[3rem]" alt="">
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
+            </div>
+          </a>
+           <!-- project 3 div -->
+          <a href="https://github.com/ashmit27j/project-mirage">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between  items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/html-circle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/css-circle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/js-circle.svg" class="w-[3rem]" alt="">
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left"">A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation.</span>
+            </div>
+          </a>
+
         </div>
+        
       </div>
     </section>
-    <section id = "aboutme" class="bg-black min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[6.5rem]">
+    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[6.5rem] mx-[1.5rem]">
       <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
         <span>aa</span>
         <span>scroll up</span>
@@ -274,8 +314,20 @@
       <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="lg:w-[35rem] p-[2.5rem] lg:p-[1.25rem]" alt="projects">
-          <span class="hidden lg:block text-white w-[30vw] p-[2.5rem] lg:p-[1.25rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
-          </span>
+        </div>
+        <div name = "text-container" class="flex flex-col gap-10">
+          <div id = "item1" class="flex flex-col gap-3">
+            <img src="src/assets/images/personal.svg" alt="" class="w-[35rem]">
+            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+          <div id = "item1" class="flex flex-col gap-3">
+            <img src="src/assets/images/experience.svg" alt="" class="w-[35rem]">
+            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
+          <div id = "item1" class="flex flex-col gap-3">
+            <img src="src/assets/images/strongset.svg" alt="" class="w-[35rem]">
+            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+          </div>
         </div>
       </div>
     </section>
