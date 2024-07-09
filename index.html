@@ -306,28 +306,57 @@
         
       </div>
     </section>
-    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[6.5rem] mx-[1.5rem]">
-      <!-- <div class=" h-[10rem] flex flex-col lg:hidden xl:hidden justify-center items-center text-white">
-        <span>aa</span>
-        <span>scroll up</span>
-      </div> -->
-      <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
-        <div class="flex items-center">
-          <img src="src/assets/images/aboutMeDesktop.svg" class="lg:w-[35rem] p-[2.5rem] lg:p-[1.25rem]" alt="projects">
+    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
+      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:items-start text-center">
+        <div class="hidden lg:flex lg:items-center">
+          <img src="src/assets/images/aboutMeDesktop.svg" class="h-[85vh] w-auto" alt="projects">
         </div>
-        <div name = "text-container" class="flex flex-col gap-10">
+        <div name = "text-container" class=" lg:w-[60vw] lg:h-[84vh] flex flex-col place-content-between gap-10 lg:gap-auto">
           <div id = "item1" class="flex flex-col gap-3">
-            <img src="src/assets/images/personal.svg" alt="" class="w-[35rem]">
-            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <img src="src/assets/images/personal.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[31rem] lg:p-0">
+            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium nulla commodi numquam consequuntur officia, at adipisci nobis asperiores tempore possimus deserunt rerum, porro quasi error dignissimos corporis ex eius harum repellat totam doloribus animi quaerat. Necessitatibus officiis excepturi numquam!</span>
           </div>
           <div id = "item1" class="flex flex-col gap-3">
-            <img src="src/assets/images/experience.svg" alt="" class="w-[35rem]">
-            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <img src="src/assets/images/experience.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[36rem] lg:p-0">
+            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem mollitia reiciendis eos et, laboriosam labore doloribus impedit necessitatibus consequuntur eum hic numquam natus dolor odit eveniet alias consectetur. Ex doloremque quam minus rerum, ipsum at qui ad mollitia nostrum?</span>
           </div>
           <div id = "item1" class="flex flex-col gap-3">
-            <img src="src/assets/images/strongset.svg" alt="" class="w-[35rem]">
-            <span class="text-left text-white font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+            <img src="src/assets/images/strongset.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[35rem] lg:p-0">
+            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita, eaque magni fuga quae officiis asperiores accusantium laborum debitis odit sed repellendus atque amet, molestias et. Omnis nam maiores excepturi hic repudiandae magnam impedit odit, consequatur vel. Ipsa, aperiam totam.</span>
           </div>
+        </div>
+      </div>
+      <!-- mobile about me div -->
+      <div name = "div-alignment" class="lg:hidden flex flex-col gap-[2.5rem] justify-center text-center pt-[2.5rem]">
+        <img src="src/assets/images/aboutMeMobile.svg" alt="" class="w-[20rem] self-center lg:hidden">
+        <div class="flex flex-col gap-[1.25rem]">
+          <!-- Personal div -->
+          <a href="">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Personal</p>
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a booking system that schedules appointments based on user convenience and visit severity, displaying available doctors, a medical records system with patient and doctor interfaces for uploading, reviewing, and managing records.</span>  
+            </div>  
+          </a>
+          <!-- project 2 div -->
+          <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Experience</p>                
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
+            </div>
+          </a>
+           <!-- project 3 div -->
+          <a href="https://github.com/ashmit27j/project-mirage">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between  items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Strongset</p>                
+              </div>
+              <span class="font-body text-[1rem] w-[85%] text-left"">A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation.</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
