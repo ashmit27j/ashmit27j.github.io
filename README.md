@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Welcome to my portfolio website! This is a showcase of my projects and skills as I journey towards becoming a full-stack web developer.
+Welcome to my portfolio website! This is a showcase of my best projects and skills as I journey towards becoming a full-stack web developer.
 
 ## About Me
 
