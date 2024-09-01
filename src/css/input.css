@@ -3,13 +3,13 @@
 @tailwind utilities;
 @font-face {
   font-family: "Quicksand";
-  src: url("../assets/fonts/Quicksand-VariableFont_wght.ttf");
+  src: url("../assets/fonts/QuicksandVariableFontwght.ttf");
 }
 @font-face {
   font-family: "HelveticaCompressed";
-  src: url("../assets/fonts/Helvetica\ Extra\ Compressed\ Regular.otf");
+  src: url("../assets/fonts/HelveticaExtraCompressed.ttf");
 }
 @font-face {
   font-family: "Lufga";
-  src: url("../assets/fonts/Lufga-Regular.otf");
+  src: url("../assets/fonts/LufgaRegular.otf");
 }

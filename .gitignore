@@ -6,3 +6,7 @@ postcss.config.js
 
 # Ignore node_modules directory
 node_modules/
+
+# Ignore build directory
+build/
+
