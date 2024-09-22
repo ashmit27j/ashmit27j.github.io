@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	
 	content: ["*.{html,js}"],
 	theme: {
 		extend: {
 			backgroundImage: {
 				"grey-white-transparent":
 					"linear-gradient(to right, rgba(255, 255, 253, 0.4), rgba(255, 255, 253, 0.3), rgba(255, 255, 255, 0.1))",
+				"soft-radial":
+					"radial-gradient(circle, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.1))",
 			},
 			screens: {
 				// rs: "300px",
@@ -28,7 +31,7 @@ module.exports = {
 			},
 			colors: {
 				primaryBg: "#D9DCDF",
-				darkModeBg: "#222222",
+				darkModeBg: "#0C0C0C",
 				secondaryBg: "#FFF",
 				black: "#000",
 				white: "#FFF",
@@ -52,5 +55,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tailwindcss-gradients")],
 };
