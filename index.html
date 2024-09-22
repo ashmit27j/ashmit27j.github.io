@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="src/css/output.css" />
+    <link rel="stylesheet" href="src/css/input.css" />
     <link rel="icon" type="image/png/svg" href="src/assets/images/logo.svg" />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       html{
         caret-color: transparent;
@@ -229,7 +230,7 @@
       <div></div>
     </section>
     <!-- marquee bar -->
-    <div class=" lg:block w-full h-fit bg-[#9c9c9c] text-start">
+    <div class=" lg:block w-full h-fit bg-[#4e4e4e] text-start">
       <marquee behavior="alternate" direction="left">
         <div class="flex items-center gap-5">
           <span class="font-heading text-[3rem] lg:text-[8rem]">DEFINE</span>
@@ -254,7 +255,7 @@
       </marquee>
     </div>
     <!-- about-me-desktop -->
-    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
+    <!-- <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
       <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:items-start text-center">
         <div class="hidden lg:flex lg:items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="h-[80vh] w-[33vw]" alt="projects">
@@ -273,7 +274,64 @@
             <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita, eaque magni fuga quae officiis asperiores accusantium laborum debitis odit sed repellendus atque amet, molestias et. Omnis nam maiores excepturi hic repudiandae magnam impedit odit, consequatur vel. Ipsa, aperiam totam.</span>
           </div>
         </div>
+    </div> -->
+
+
+    <!-- ====================================================================================== -->
+    <!-- ====================================================================================== -->
+    <!-- ====================================================================================== -->
+    <!-- about-me-desktop-TRY -->
+    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
+      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:items-start text-center">
+        <!-- about me image left bar -->
+        <div class="hidden lg:flex lg:items-center">
+          <img src="src/assets/images/aboutMeDesktop.svg" class="max-h-[80vh] max-w-[33vw] pl-[10px]" alt="projects">
+        </div>
+        <!-- right side panel text: personal, experience, strongset -->
+        <!-- new grid layout -->
+        
+        <div name = "project-container" class = " max-h-[100vh] flex flex-col gap-[1.5rem]">
+          <!--Personal-->
+          <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-[#4e4e4e] border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Personal</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/linkedin.svg" class="w-6 h-6" alt="linkedinLogo">
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[80%] text-left">I am an aspiring software developer with experience in machine learning, web design, and UI/UX design. My goal is to become a versatile professional with a comprehensive understanding of how various components of software development work together, enabling me to contribute across multiple domains.</span>  
+            </div>  
+          </a>
+          <!--Experience-->
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-[#4e4e4e] border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Experience</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/htmlCircle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/cssCircle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/jsCircle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/figmaCircle.svg" class="w-[3rem]" alt="">
+
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[80%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
+            </div>
+           <!--Strongset-->
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-[#4e4e4e] border-[0.1rem] rounded-[1rem]">
+              <div class="flex place-content-between  items-center">
+                <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Strongset</p>
+                <div class="my-auto flex gap-3">
+                  <img src="src/assets/images/htmlCircle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/cssCircle.svg" class="w-[3rem]" alt="">
+                  <img src="src/assets/images/jsCircle.svg" class="w-[3rem]" alt="">
+                </div>
+              </div>
+              <span class="font-body text-[1rem] w-[80%] text-left"">A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation.</span>
+            </div>
+        </div>
       </div>
+
       <!-- mobile about me div -->
       <div name = "div-alignment" class="lg:hidden flex flex-col gap-[2.5rem] justify-center text-center pt-[2.5rem]">
         <img src="src/assets/images/aboutMeMobile.svg" alt="" class="w-[20rem] self-center lg:hidden">
