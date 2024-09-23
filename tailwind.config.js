@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	
 	content: ["*.{html,js}"],
 	theme: {
 		extend: {
@@ -30,7 +29,7 @@ module.exports = {
 				// => @media (min-width: 1536px) { ... }},
 			},
 			colors: {
-				primaryBg: "#D9DCDF",
+				primaryBg: "#000",
 				darkModeBg: "#0C0C0C",
 				secondaryBg: "#FFF",
 				black: "#000",

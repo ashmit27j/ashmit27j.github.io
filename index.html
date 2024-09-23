@@ -30,33 +30,35 @@
     }
     </style>
   </head>
-  <body class="bg-darkModeBg font-body overflow-x-hidden fade-in">
+  <body class="bg-[#151518] font-body overflow-x-hidden fade-in">
     <header
-      class="w-full  h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
+      class="max-w-full h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
       <nav
-        class="bg-secondaryBg shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
+        class="bg-[#232226] shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
       >
-        <button type="button" class="bg-white text-white bg  px-4 py-3 rounded-xl ">
+        <button type="button" class=" bg  px-4 py-3 rounded-xl">
           <!-- hidden div for alignment -->
-          Get in touch
         </button>
-        <ul class="flex justify-between gap-10 bg-">
+        <ul class="flex justify-between gap-10">
           <li>
-            <a href="#portfolio" class="hover:font-semibold" >Portfolio</a>
+            <a href="#portfolio" class="hover:font-semibold text-white" >Portfolio</a>
           </li>
           <!-- main page with hyperlinks to socials and brief description -->
-          <p>|</p>
-          <li class=""><a href="#aboutme" class="hover:font-semibold">About Me</a></li>
+          <p class="text-white">|</p>
+          <li class=""><a href="#aboutme" class="hover:font-semibold text-white">About Me</a></li>
           <!-- about me page with stuff about me -->
-          <p>|</p>
-          <li><a href="#projects" class="hover:font-semibold">Projects</a></li>
+          <p class="text-white">|</p>
+          <li><a href="#projects" class="hover:font-semibold text-white">Projects</a></li>
           <!-- prrojects.html page with a list of my projects, links to github and stuff -->
-          <p>|</p>
-          <li><a href="#downloadcv" class="hover:font-semibold">Blogs</a></li>
+          <p class="text-white">|</p>
+          <li><a href="#downloadcv" class="hover:font-semibold text-white">Blogs</a></li>
           <!-- downloadable link to my cv, or directly start download -->
         </ul>
-        <a type="button" class="bg-darkModeBg text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
+        <!-- <a type="button" class="bg-darkModeBg text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
+          Get in touch
+        </a> -->
+        <a type="button" class="bg-[#232226] text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:border-2-white" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
           Get in touch
         </a>
       </nav>
@@ -281,22 +283,20 @@
     <!-- ====================================================================================== -->
     <!-- ====================================================================================== -->
     <!-- about-me-desktop-TRY -->
-    <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
-      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:justify-between text-center">
+    <section id = "aboutme" class="bg-[#151518] min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
+      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-[1.5rem] lg:justify-between text-center">
         <!-- about me image left bar -->
         <!-- <div class="hidden lg:flex lg:items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="max-h-[80vh] max-w-[33vw] pl-[10px]" alt="projects">
         </div> -->
-        <div class="hidden lg:w-[50%] lg:min-h-max lg:p-8 lg:flex lg:flex-col lg:text-start bg-[#151515] text-white rounded-[1rem]">
-          
+        <div class="hidden lg:w-[50%] lg:min-h-max lg:p-8 lg:flex lg:flex-col lg:text-start bg-[#232226] text-white rounded-[1rem]">
         </div>
         <!-- right side panel text: personal, experience, strongset -->
         <!-- new grid layout -->
-        
         <div name = "project-container" class = " max-h-[100vh] flex flex-col gap-[1.5rem]">
           <!--Personal-->
           <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#151515] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Personal</p>
                 <div class="my-auto flex gap-3">
@@ -307,7 +307,7 @@
             </div>  
           </a>
           <!--Experience-->
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#151515] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Experience</p>
                 <div class="my-auto flex gap-3">
@@ -321,7 +321,7 @@
               <span class="font-body text-[1rem] w-[80%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
             </div>
            <!--Strongset-->
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#151515] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Strongset</p>
                 <div class="my-auto flex gap-3">
@@ -369,7 +369,7 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="mx-[1.5rem] bg-darkModeBg min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
+    <section id="projects" class="mx-[1.5rem] bg-[#151518] min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
       <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
           <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:px-0" alt="projects">
@@ -380,7 +380,7 @@
         <div name = "project-container" class = "grid grid-cols-1 lg:grid-cols-3 gap-10 pt-[0.75rem]">
           <!-- project 1 Div -->
           <a href="">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
                 <div class="my-auto flex gap-3">
@@ -392,7 +392,7 @@
           </a>
           <!-- project 2 div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
                 <div class="my-auto flex gap-3">
@@ -404,7 +404,7 @@
           </a>
            <!-- project 3 div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
                 <div class="my-auto flex gap-3">
@@ -418,7 +418,7 @@
           </a>
           <!-- project 1 Div -->
           <a href="">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
                 <div class="my-auto flex gap-3">
@@ -430,7 +430,7 @@
           </a>
           <!-- project 2 div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
                 <div class="my-auto flex gap-3">
@@ -442,7 +442,7 @@
           </a>
            <!-- project 3 div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
                 <div class="my-auto flex gap-3">
