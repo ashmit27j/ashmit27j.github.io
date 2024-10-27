@@ -1,10 +1,14 @@
 # Portfolio Website
 
-Welcome to my portfolio website! This is a showcase of my best projects and skills as I journey towards becoming a full-stack web developer.
+Welcome to my portfolio! This site showcases my projects and skills as I work towards becoming a full-stack web developer.
+
+---
 
 ## About Me
 
-I am currently studying web design and aspiring to become a full-stack web developer. I have a strong foundation in basic JavaScript, HTML, and CSS, and I have experience working with various frameworks, including Tailwind, Bootstrap, and React. Additionally, I have a background in several programming languages that I have previously learned.
+I'm an aspiring full-stack web developer with a solid foundation in web design, basic JavaScript, HTML, and CSS. I've also worked extensively with frameworks like Tailwind CSS, Bootstrap, and React. My background includes experience in multiple programming languages and continuous learning in web technologies to refine my skills.
+
+---
 
 ## Skills
 
@@ -25,52 +29,51 @@ I am currently studying web design and aspiring to become a full-stack web devel
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
+---
+
 ## Projects
 
-Here are some of the projects I've worked on:
+Here are some of the projects I've worked on, showcasing a blend of front-end and back-end skills:
 
-### GameGrove
-- **Description**: E-commerce platform to buy games 
-- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind, React.
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/Cybercery/gamegrove])
-- 
+### [GameGrove](https://github.com/Cybercery/gamegrove)
+- **Description**: An e-commerce platform for buying games.
+- **Technologies Used**: HTML, CSS, JavaScript, Tailwind CSS, React.
 
-### E-Wallet
-- **Description**: E-commerce platform to buy games 
-- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind.
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/Akshaj05/e-wallet])
-- Deployed on Vercel: https://e-wallet-lilac.vercel.app/
+### [E-Wallet](https://github.com/Akshaj05/e-wallet)
+- **Description**: A responsive e-wallet application.
+- **Technologies Used**: HTML, CSS, JavaScript, Tailwind CSS.
+- **Live Demo**: [Deployed on Vercel](https://e-wallet-lilac.vercel.app/)
 
-### Project Mirage:
-- **Description**: A collaborative repository where developers from GDSC MPSTME create a web application without direct communication, unveiling the unpredictable essence of teamwork and innovation. 
-- **Technologies Used**: HTML, CSS, JS and Python
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/GDSC-NMIMS-MPSTME-Mumbai/project-mirage])
+### [Project Mirage](https://github.com/GDSC-NMIMS-MPSTME-Mumbai/project-mirage)
+- **Description**: A collaborative repository for GDSC MPSTME where developers build a web app without direct communication, showcasing the essence of teamwork and innovation.
+- **Technologies Used**: HTML, CSS, JavaScript, Python.
 
-### Titanic Passanger Survival Analysis
-- **Description**: Using Machine learning to calculate the survivability rate of people that embarked on the titanic
+### [Titanic Passenger Survival Analysis](https://github.com/ashmit27j/Tech-project-modified)
+- **Description**: A machine learning project that calculates the survivability rate of Titanic passengers.
 - **Technologies Used**: Python.
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/ashmit27j/Tech-project-modified])
 
-### CodeConnect
-- **Description**: Brief description of the project.
-- **Technologies Used**: HTML, CSS, JS, frameworks & others: Tailwind, React, Firebase, nextjs, etc.
-- [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/codeconnectt/codeconnect])
-
-
-## Education
-
-- **Currently Studying**: Web Design
-
-## Contact
-
-Feel free to reach out to me through the following channels:
-
-[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:[ashmit27j@gmail.com])
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/ashmit-jain-386427292/])
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)]([https://github.com/ashmit27j])
-
-Thank you for visiting my portfolio website. I look forward to connecting with you!
+### [CodeConnect](https://github.com/codeconnectt/codeconnect)
+- **Description**: A platform for developer collaboration.
+- **Technologies Used**: HTML, CSS, JavaScript, Tailwind CSS, React, Firebase, Next.js.
 
 ---
 
-*Note: This portfolio is a work in progress as I continue to learn and grow in the field of web development.*
+## Education
+
+- **Current Studies**: Web Design
+
+---
+
+## Contact
+
+Feel free to reach out through the following channels:
+
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:ashmit27j@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashmit-jain-386427292/)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/ashmit27j)
+
+Thank you for visiting my portfolio. I look forward to connecting!
+
+---
+
+*Note: This portfolio is a work in progress as I continue learning and growing in web development.*
