@@ -1,12 +1,12 @@
 # Portfolio Website
 
-Welcome to my portfolio! This site showcases my projects and skills as I work towards becoming a full-stack web developer.
+Welcome to my portfolio! Here, I showcase my journey in web development, highlighting my projects, skills, and dedication to mastering full-stack development.
 
 ---
 
 ## About Me
 
-I'm an aspiring full-stack web developer with a solid foundation in web design, basic JavaScript, HTML, and CSS. I've also worked extensively with frameworks like Tailwind CSS, Bootstrap, and React. My background includes experience in multiple programming languages and continuous learning in web technologies to refine my skills.
+I’m an aspiring full-stack web developer with a strong foundation in web design, JavaScript, HTML, and CSS. My experience extends to frameworks like Tailwind CSS, Bootstrap, and React. I’m skilled in multiple programming languages and am continually expanding my knowledge in modern web technologies to further enhance my abilities.
 
 ---
 
