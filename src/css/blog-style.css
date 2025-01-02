@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Otama";
-  src: url(../Fonts/Otama-ep.otf);
+  src: url("../assets/fonts/Otama-ep.otf") format("opentype");
 }
 :root {
   --font-color: #000;
@@ -15,6 +15,19 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
 }
+
+.dark-mode {
+  --font-color: #fff;
+  --alt-font-color: #e0e0e0;
+  --background-color: #121212;
+  --card-color: #1e1e1e;
+}
+/* .dark-mode {
+  --font-color: #fff;
+  --alt-font-color: #e0e0e0;
+  --background-color: #121212;
+  --card-color: #1e1e1e;
+} */
 
 body {
   margin: 0px;
