@@ -88,11 +88,10 @@
       </nav>
     </div>
     <!-- mobile navbar -->
-    </div>
     <!-- gradient div -->
     <div class=" lg:hidden fixed w-full h-[10rem] z-50 bottom-0 bg-gradient-to-t from-[rgb(0,0,0)] via-[rgba(0,0,0,0.9)]  to-[rgba(217,220,223,0)]">
       <div
-      name="mobile-navbar-alignment-container"
+      id="mobile-navbar-alignment-container"
       class="fixed z-50 bottom-[6rem] right-[1.5rem] lg:hidden "
     >
     <div
@@ -136,7 +135,7 @@
     </div>
     <!-- mobile social link bar -->
     <div
-      name="mobile-link-alignment-container"
+      id="mobile-link-alignment-container"
       class="fixed z-50 bottom-[6rem] left-[1.5rem] lg:hidden"
     >
     <div
@@ -174,28 +173,26 @@
  <img src="src/assets/images/linkWhite.svg" id="linkWhite" alt="" class="h-[1.5rem] w-[1.5rem] hidden">
   </button>
 </div>
-    </div>
     <!-- scroll-up-mobile -->
     <div
-      name="scroll-up-mobile-alignment-container"
+      id="scroll-up-mobile-alignment-container"
       class="fixed h-0 w-full z-50 bottom-[3.25rem] flex items-center justify-center lg:hidden"
     >
       <a href="#portfolio" class="h-[3.25rem] px-[2.25rem] rounded-full flex items-center bg-white text-black"> <span class="">Scroll To Top</span></a>
     </div>
-    </div>
-    <section id="portfolio" name = "hero-banner" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-white">
+    <section id="portfolio" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-white">
       <!-- Will display for viewports that arent lg or xl -->
-      <div name = "except-lg" class="lg:hidden p-10 flex flex-col items-center">
+      <div id="except-lg" class="lg:hidden p-10 flex flex-col items-center">
       <span class="text-[0.8rem]">UI Designer & Web Developer</span>
       <img src="src/assets/images/NameDark.svg" class="py-[0.5rem]" alt="My Name as an svg">
       <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
       <span class="text-[0.8rem]">Employed as a UI Designer at Synoris</span>
       </div>
       <!-- will display for lg and above -->
-      <div name = "text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
-        <div name = "outer-text div" class=" flex flex-col items-end">
+      <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
+        <div id="outer-text div" class=" flex flex-col items-end">
           <div class="w-fit">
-              <div name = " inner-title div" class="hidden lg:flex">
+              <div id=" inner-title div" class="hidden lg:flex">
               <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
                 <div class=" w-full my-auto flex pl-[0.5rem]">
                   <img src="src/assets/images/circle2.svg" alt="">
@@ -227,7 +224,7 @@
           </div>
       </div>
       
-      <div name = "image-alignment-container" class=" relative z-100">
+      <div id="image-alignment-container" class=" relative z-100">
         <img src="src/assets/images/AshmitPfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[45rem] lg:pt-[5rem]">
       </div>
       <div></div>
@@ -259,11 +256,11 @@
     </div>
     <!-- about-me-desktop -->
     <!-- <section id = "aboutme" class="bg-darkModeBg min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
-      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:items-start text-center">
+      <div id="text-alignment" class=" hidden lg:text-left lg:flex lg:gap-10 justify-start lg:items-start text-center">
         <div class="hidden lg:flex lg:items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="h-[80vh] w-[33vw]" alt="projects">
         </div>
-        <div name = "text-container" class=" lg:w-[60vw] lg:h-[84vh] flex flex-col place-content-between gap-10 lg:gap-auto">
+        <div id="text-container" class=" lg:w-[60vw] lg:h-[84vh] flex flex-col place-content-between gap-10 lg:gap-auto">
           <div id = "item1" class="flex flex-col gap-3 fade-in">
             <img src="src/assets/images/personal.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[30rem] lg:p-0">
             <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium nulla commodi numquam consequuntur officia, at adipisci nobis asperiores tempore possimus deserunt rerum, porro quasi error dignissimos corporis ex eius harum repellat totam doloribus animi quaerat. Necessitatibus officiis excepturi numquam!</span>
@@ -284,8 +281,8 @@
     <!-- ====================================================================================== -->
     <!-- ====================================================================================== -->
     <!-- about-me-desktop-TRY -->
-    <section id = "aboutme" class="bg-[#151518] min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
-      <div name = "text-alignment" class=" hidden lg:text-left lg:flex lg:gap-[1.5rem] lg:justify-between text-center">
+    <section id="aboutme" class="bg-[#151518] min-h-[100vh] max-h-fit pb-[2rem] lg:pt-[8rem] mx-[1.5rem]">
+      <div id="text-alignment" class=" hidden lg:text-left lg:flex lg:gap-[1.5rem] lg:justify-between text-center">
         <!-- about me image left bar -->
         <!-- <div class="hidden lg:flex lg:items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="max-h-[80vh] max-w-[33vw] pl-[10px]" alt="projects">
@@ -295,7 +292,7 @@
         </div>
         <!-- right side panel text: personal, experience, strongset -->
         <!-- new grid layout -->
-        <div name = "project-container" class = " max-h-[100vh] flex flex-col gap-[1.5rem]">
+        <div id="project-container" class = " max-h-[100vh] flex flex-col gap-[1.5rem]">
           <!--Personal-->
           <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
             <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] rounded-[1rem]">
@@ -338,7 +335,7 @@
       </div>
 
       <!-- mobile about me div -->
-      <div name = "div-alignment" class="lg:hidden flex flex-col gap-[2.5rem] justify-center text-center pt-[2.5rem]">
+      <div id="div-alignment" class="lg:hidden flex flex-col gap-[2.5rem] justify-center text-center pt-[2.5rem]">
         <img src="src/assets/images/aboutMeMobile.svg" alt="" class="w-[20rem] self-center lg:hidden">
         <div class="flex flex-col gap-[1.25rem]">
           <!-- Personal div -->
@@ -372,14 +369,14 @@
       </div>
     </section>
     <section id="projects" class="mx-[1.5rem] bg-[#151518] min-h-[100vh] pb-[2rem] lg:pt-[6.5rem]">
-      <div name = "text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
+      <div id="text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
           <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:px-0" alt="projects">
           <span class="hidden lg:block text-white w-[90vw] p-[2.5rem] lg:px-[2rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
           </span>
         </div>
         <!-- new grid layout -->
-        <div name = "project-container" class = "grid grid-cols-1 lg:grid-cols-3 gap-10 pt-[0.75rem]">
+        <div id="project-container" class = "grid grid-cols-1 lg:grid-cols-3 gap-10 pt-[0.75rem]">
           <!-- project 1 Div -->
           <a href="">
             <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
