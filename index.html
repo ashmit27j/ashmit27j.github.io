@@ -70,19 +70,19 @@
       class="w-full h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50 lg:bottom-0"
     >
       <nav
-        class="bg-secondaryBg shadow-lg  w-fit h-[5rem] p-3 m-5 flex justify-between align-middle items-center rounded-full font-body font-medium"
+        class="bg-darkModeBgLighter border-2 border-secondaryColor border-opacity-30 shadow-lg  w-fit h-[5rem] p-3 m-5 flex justify-between align-middle items-center rounded-full font-body font-medium"
       >
         <ul class="flex justify-between gap-3">
-          <button type="button" class="bg-[#FAFAFA] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.linkedin.com/in/ashmit-jain-386427292/'">
+          <button type="button" class="bg-secondaryColor text-highlightColor p-4 rounded-full shadow-inner" style="box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);" onclick ="window.location.href='https://www.linkedin.com/in/ashmit-jain-386427292/'">
             <img src="src/assets/images/linkedin.svg" class="w-6 h-6" alt="linkedinLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.figma.com/@ashmit4'">
+          <button type="button" class="bg-secondaryColor text-highlightColor p-4 rounded-full shadow-inner" style="box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);" onclick ="window.location.href='https://www.figma.com/@ashmit4'">
             <img src="src/assets/images/figma.svg" class="w-6 h-6" alt="figmaLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://github.com/ashmit27j'">
+          <button type="button" class="bg-secondaryColor text-highlightColor p-4 rounded-full shadow-inner" style="box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);" onclick ="window.location.href='https://github.com/ashmit27j'">
             <img src="src/assets/images/github.svg" class="w-6 h-6" alt="githubLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.instagram.com/ashmit27j/'">
+          <button type="button" class="bg-secondaryColor text-highlightColor p-4 rounded-full shadow-inner" style="box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);" onclick ="window.location.href='https://www.instagram.com/ashmit27j/'">
             <img src="src/assets/images/instagram.svg" class="w-6 h-6" alt="instagramLogo">
           </button>
         </ul>
@@ -181,8 +181,9 @@
     >
       <a href="#portfolio" class="h-[3.25rem] px-[2.25rem] rounded-full flex items-center bg-highlightColor text-black"> <span class="">Scroll To Top</span></a>
     </div>
-    <section id="portfolio" class="h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-highlightColor">
-      <div class="">
+    <section id="portfolio" class="h-fit lg:h-[100vh] pt-[0.6rem] bg-clip-content overflow-clip text-highlightColor">
+      <!-- outer line div -->
+      <div class=" mx-[0.55rem] rounded-2xl border-2 border-secondaryColor border-opacity-30">
           <!-- Will display for viewports that arent lg or xl -->
         <div id="except-lg" class="lg:hidden p-10 flex flex-col items-center">
         <span class="text-[0.8rem]">UI Designer & Web Developer</span>
@@ -192,7 +193,7 @@
         </div>
         <!-- will display for lg and above -->
         <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
-          <div id="outer-text div" class=" flex flex-col items-end">
+          <div id="outer-text div" class=" p-[1.1rem] flex flex-col items-end">
             <div class="w-fit">
                 <div id=" inner-title div" class="hidden lg:flex">
                 <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
