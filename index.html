@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/output.css" />
     <link rel="stylesheet" href="src/css/input.css" />
     <link rel="icon" type="image/png/svg" href="src/assets/images/logo.svg" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet">
     <script src="src/js/index.js" defer></script>
     <style>
       html{
@@ -31,35 +31,36 @@
     }
     </style>
   </head>
-  <body class="bg-[#151518] font-body overflow-x-hidden fade-in">
+  <body class="bg-darkModeBg font-body overflow-x-hidden fade-in">
     <header
       class="max-w-full h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
       <nav
-        class="bg-[#232226] shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium"
+        class="bg-secondaryColor/20 backdrop-blur-lg shadow-lg  w-full h-[5rem] p-10 m-5 flex justify-between align-middle items-center rounded-xl font-body font-medium border-secondaryColor border-opacity-30 border-2"
+        aria-label="Main navigation"
       >
         <button type="button" class=" bg  px-4 py-3 rounded-xl">
           <!-- hidden div for alignment -->
         </button>
         <ul class="flex justify-between gap-10">
           <li>
-            <a href="#portfolio" class="hover:font-semibold text-white" >Portfolio</a>
+            <a href="#portfolio" class="hover:font-semibold text-highlightColor" >Portfolio</a>
           </li>
           <!-- main page with hyperlinks to socials and brief description -->
-          <p class="text-white">|</p>
-          <li class=""><a href="#aboutme" class="hover:font-semibold text-white">About Me</a></li>
+          <p class="text-highlightColor">|</p>
+          <li class=""><a href="#aboutme" class="hover:font-semibold text-highlightColor">About Me</a></li>
           <!-- about me page with stuff about me -->
-          <p class="text-white">|</p>
-          <li><a href="#projects" class="hover:font-semibold text-white">Projects</a></li>
+          <p class="text-highlightColor">|</p>
+          <li><a href="#projects" class="hover:font-semibold text-highlightColor">Projects</a></li>
           <!-- prrojects.html page with a list of my projects, links to github and stuff -->
-          <p class="text-white">|</p>
-          <li><a href="#downloadcv" class="hover:font-semibold text-white">Blogs</a></li>
+          <p class="text-highlightColor">|</p>
+          <li><a href="#downloadcv" class="hover:font-semibold text-highlightColor">Blogs</a></li>
           <!-- downloadable link to my cv, or directly start download -->
         </ul>
-        <!-- <a type="button" class="bg-darkModeBg text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
+        <!-- <a type="button" class="bg-darkModeBg text-highlightColor px-4 py-3 rounded-xl hover:bg-primaryBg hover:text-black hover:border-2-black" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
           Get in touch
         </a> -->
-        <a type="button" class="bg-[#232226] text-white px-4 py-3 rounded-xl hover:bg-primaryBg hover:border-2-white" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
+        <a type="button" class="bg-[#232226] text-highlightColor px-4 py-3 rounded-xl hover:bg-primaryBg hover:border-2-highlightColor" href="mailto:example@example.com?subject=Subject&body=Body%20Text">
           Get in touch
         </a>
       </nav>
@@ -72,16 +73,16 @@
         class="bg-secondaryBg shadow-lg  w-fit h-[5rem] p-3 m-5 flex justify-between align-middle items-center rounded-full font-body font-medium"
       >
         <ul class="flex justify-between gap-3">
-          <button type="button" class="bg-[#FAFAFA] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.linkedin.com/in/ashmit-jain-386427292/'">
+          <button type="button" class="bg-[#FAFAFA] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.linkedin.com/in/ashmit-jain-386427292/'">
             <img src="src/assets/images/linkedin.svg" class="w-6 h-6" alt="linkedinLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.figma.com/@ashmit4'">
+          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.figma.com/@ashmit4'">
             <img src="src/assets/images/figma.svg" class="w-6 h-6" alt="figmaLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://github.com/ashmit27j'">
+          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://github.com/ashmit27j'">
             <img src="src/assets/images/github.svg" class="w-6 h-6" alt="githubLogo">
           </button>
-          <button type="button" class="bg-[#FbFbFb] text-white p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.instagram.com/ashmit27j/'">
+          <button type="button" class="bg-[#FbFbFb] text-highlightColor p-4 rounded-full shadow-inner" onclick ="window.location.href='https://www.instagram.com/ashmit27j/'">
             <img src="src/assets/images/instagram.svg" class="w-6 h-6" alt="instagramLogo">
           </button>
         </ul>
@@ -99,16 +100,16 @@
     class="hidden "
   >
     <ul class="flex flex-col gap-[1.5rem]">
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm">
         <a href=""><img src="src/assets/images/portfolio.png" alt="Portfolio Image" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm">
         <a href=""><img src="src/assets/images/aboutMe.png" alt="about me" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm" >
         <a href=""><img src="src/assets/images/projects.png" alt="projects" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm">
         <a href=""><img src="src/assets/images/cv.png" alt="CV" class = "w-[1.5rem] h-[1.5rem]"></a>
       </li>
     </ul>
@@ -116,7 +117,7 @@
         <button
     id="mobile-toggle-button"
     type="button"
-    class="bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
+    class="bg-highlightColor p-[1rem] rounded-full fixed bottom-[1.5rem] right-[1.5rem]"
   >
     <img
       src="src/assets/images/menuToggle.svg"
@@ -143,21 +144,21 @@
     class=" hidden "
   >
     <ul class="  flex flex-col gap-[1.5rem]">
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm">
         <a href="https://www.instagram.com/ashmit27j/">
              <img src="src/assets/images/instagram.svg" class="w-[1.5rem] h-[1.5rem]" alt="">     
         </a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm">
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm">
         <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
           <img src="src/assets/images/linkedin.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
         </a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm" >
         <a href="https://www.figma.com/@ashmit4"><img src="src/assets/images/figma.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
           </a>
       </li>
-      <li class="bg-white text-center w-fit p-[1rem] rounded-full text-sm" >
+      <li class="bg-highlightColor text-center w-fit p-[1rem] rounded-full text-sm" >
         <a href="https://github.com/ashmit27j">
           <img src="src/assets/images/github.svg" class="w-[1.5rem] h-[1.5rem]" alt="">
         </a>
@@ -167,10 +168,10 @@
   <button
     id="link-toggle-button"
     type="button"
-    class=" bg-white p-[1rem] rounded-full fixed bottom-[1.5rem] left-[1.5rem]"
+    class=" bg-highlightColor p-[1rem] rounded-full fixed bottom-[1.5rem] left-[1.5rem]"
   >
  <img src="src/assets/images/links.svg" id="linkDark" alt="" class="h-[1.5rem] w-[1.5rem]">
- <img src="src/assets/images/linkWhite.svg" id="linkWhite" alt="" class="h-[1.5rem] w-[1.5rem] hidden">
+ <img src="src/assets/images/linkhighlightColor.svg" id="linkhighlightColor" alt="" class="h-[1.5rem] w-[1.5rem] hidden">
   </button>
 </div>
     <!-- scroll-up-mobile -->
@@ -178,56 +179,59 @@
       id="scroll-up-mobile-alignment-container"
       class="fixed h-0 w-full z-50 bottom-[3.25rem] flex items-center justify-center lg:hidden"
     >
-      <a href="#portfolio" class="h-[3.25rem] px-[2.25rem] rounded-full flex items-center bg-white text-black"> <span class="">Scroll To Top</span></a>
+      <a href="#portfolio" class="h-[3.25rem] px-[2.25rem] rounded-full flex items-center bg-highlightColor text-black"> <span class="">Scroll To Top</span></a>
     </div>
-    <section id="portfolio" class=" h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-white">
-      <!-- Will display for viewports that arent lg or xl -->
-      <div id="except-lg" class="lg:hidden p-10 flex flex-col items-center">
-      <span class="text-[0.8rem]">UI Designer & Web Developer</span>
-      <img src="src/assets/images/NameDark.svg" class="py-[0.5rem]" alt="My Name as an svg">
-      <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
-      <span class="text-[0.8rem]">Employed as a UI Designer at Synoris</span>
-      </div>
-      <!-- will display for lg and above -->
-      <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
-        <div id="outer-text div" class=" flex flex-col items-end">
-          <div class="w-fit">
-              <div id=" inner-title div" class="hidden lg:flex">
-              <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
-                <div class=" w-full my-auto flex pl-[0.5rem]">
-                  <img src="src/assets/images/circle2.svg" alt="">
-                  <div class=" bg-white w-full h-[0.125rem] my-auto"></div>
-                </div>
+    <section id="portfolio" class="h-fit lg:h-[100vh] pt-[1rem] bg-clip-content overflow-clip text-highlightColor">
+      <div class="">
+          <!-- Will display for viewports that arent lg or xl -->
+        <div id="except-lg" class="lg:hidden p-10 flex flex-col items-center">
+        <span class="text-[0.8rem]">UI Designer & Web Developer</span>
+        <img src="src/assets/images/NameDark.svg" class="py-[0.5rem]" alt="My Name as an svg">
+        <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
+        <span class="text-[0.8rem]">Employed as a UI Designer at Synoris</span>
+        </div>
+        <!-- will display for lg and above -->
+        <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
+          <div id="outer-text div" class=" flex flex-col items-end">
+            <div class="w-fit">
+                <div id=" inner-title div" class="hidden lg:flex">
+                <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
+                  <div class=" w-full my-auto flex pl-[0.5rem]">
+                    <img src="src/assets/images/circle2.svg" alt="">
+                    <div class=" bg-highlightColor w-full h-[0.125rem] my-auto"></div>
+                  </div>
+              </div>
+              <span class="lg:hidden">UI Designer & Web Developer</span>
+              <!-- Old ashmit logo -->
+              <p class="font-subHeading text-[8rem] tracking-tighter">Ashmit Jain</p>
+              <!-- <img src="src/assets/images/NameDark.svg" class="w-[50rem] py-[2rem]" alt="My Name as an svg"> -->
+          
             </div>
-            <span class="lg:hidden">UI Designer & Web Developer</span>
-            <img src="src/assets/images/NameDark.svg" class="w-[50rem] py-[2rem]" alt="My Name as an svg">
+            <span class="flex self-start w-full">
+              <div class=" w-full my-auto flex pl-[0.5rem]">
+                  <div class=" bg-highlightColor w-full h-[0.125rem] ml-[39.9rem] my-auto"></div>
+                  <img src="src/assets/images/circle2.svg" alt="">
+                </div>
+                  <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Employed as a UI Designer at Synoris</span>
+            </span>
+            <span class="flex self-start w-full">
+              <div class=" w-full my-auto flex pl-[0.5rem]">
+                  <!-- <div class=" bg-black w-full h-[0.125rem] ml-[35.9rem] my-auto"></div>
+                  <img src="src/assets/images/circle2.svg" alt=""> -->
+                </div>
+                  <span class="text-nowrap pl-[0.5rem] text-[1.2rem]"></span>
+            </span>
+            </div>
+            <div class="flex flex-col bottom-[2rem] items-center self-end absolute">
+              <img src="src/assets/images/scrollDown.svg" class="w-[1.5rem] self-end" alt="">
+              <img src="src/assets/images/circle2.svg" class="w-[1rem]" alt="">
+            </div>
+        </div>
         
-          </div>
-          <span class="flex self-start w-full">
-            <div class=" w-full my-auto flex pl-[0.5rem]">
-                <div class=" bg-white w-full h-[0.125rem] ml-[39.9rem] my-auto"></div>
-                <img src="src/assets/images/circle2.svg" alt="">
-              </div>
-                <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Head of UI/UX at GDSC MPSTME</span>
-          </span>
-          <span class="flex self-start w-full">
-            <div class=" w-full my-auto flex pl-[0.5rem]">
-                <!-- <div class=" bg-black w-full h-[0.125rem] ml-[35.9rem] my-auto"></div>
-                <img src="src/assets/images/circle2.svg" alt=""> -->
-              </div>
-                <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Employed as a UI Designer at Synoris</span>
-          </span>
-          </div>
-          <div class="flex flex-col bottom-[2rem] items-center self-end absolute">
-            <img src="src/assets/images/scrollDown.svg" class="w-[1.5rem] self-end" alt="">
-            <img src="src/assets/images/circle2.svg" class="w-[1rem]" alt="">
-          </div>
+        <div id="image-alignment-container" class=" relative z-100">
+          <img src="src/assets/images/AshmitPfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[45rem] lg:pt-[5rem]">
+        </div>
       </div>
-      
-      <div id="image-alignment-container" class=" relative z-100">
-        <img src="src/assets/images/AshmitPfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[45rem] lg:pt-[5rem]">
-      </div>
-      <div></div>
     </section>
     <!-- marquee bar -->
     <div class=" lg:block w-full h-fit bg-[#4e4e4e] text-start">
@@ -263,15 +267,15 @@
         <div id="text-container" class=" lg:w-[60vw] lg:h-[84vh] flex flex-col place-content-between gap-10 lg:gap-auto">
           <div id = "item1" class="flex flex-col gap-3 fade-in">
             <img src="src/assets/images/personal.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[30rem] lg:p-0">
-            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium nulla commodi numquam consequuntur officia, at adipisci nobis asperiores tempore possimus deserunt rerum, porro quasi error dignissimos corporis ex eius harum repellat totam doloribus animi quaerat. Necessitatibus officiis excepturi numquam!</span>
+            <span class="text-center lg:text-left text-highlightColor font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum praesentium nulla commodi numquam consequuntur officia, at adipisci nobis asperiores tempore possimus deserunt rerum, porro quasi error dignissimos corporis ex eius harum repellat totam doloribus animi quaerat. Necessitatibus officiis excepturi numquam!</span>
           </div>
           <div id = "item1" class="flex flex-col gap-3 fade-in">
             <img src="src/assets/images/experience.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[33rem] lg:p-0">
-            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem mollitia reiciendis eos et, laboriosam labore doloribus impedit necessitatibus consequuntur eum hic numquam natus dolor odit eveniet alias consectetur. Ex doloremque quam minus rerum, ipsum at qui ad mollitia nostrum?</span>
+            <span class="text-center lg:text-left text-highlightColor font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quidem mollitia reiciendis eos et, laboriosam labore doloribus impedit necessitatibus consequuntur eum hic numquam natus dolor odit eveniet alias consectetur. Ex doloremque quam minus rerum, ipsum at qui ad mollitia nostrum?</span>
           </div>
           <div id = "item1" class="flex flex-col gap-3 fade-in">
             <img src="src/assets/images/strongset.svg" alt="" class=" w-[20rem] self-center lg:self-start lg:w-[33rem] lg:p-0">
-            <span class="text-center lg:text-left text-white font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita, eaque magni fuga quae officiis asperiores accusantium laborum debitis odit sed repellendus atque amet, molestias et. Omnis nam maiores excepturi hic repudiandae magnam impedit odit, consequatur vel. Ipsa, aperiam totam.</span>
+            <span class="text-center lg:text-left text-highlightColor font-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita, eaque magni fuga quae officiis asperiores accusantium laborum debitis odit sed repellendus atque amet, molestias et. Omnis nam maiores excepturi hic repudiandae magnam impedit odit, consequatur vel. Ipsa, aperiam totam.</span>
           </div>
         </div>
     </div> -->
@@ -287,7 +291,7 @@
         <!-- <div class="hidden lg:flex lg:items-center">
           <img src="src/assets/images/aboutMeDesktop.svg" class="max-h-[80vh] max-w-[33vw] pl-[10px]" alt="projects">
         </div> -->
-        <div class="font-subHeading text-[1.5rem] lg:text-[3rem] font-black hidden lg:w-[50%] lg:min-h-max lg:p-8 lg:flex lg:flex-col lg:justify-center lg:text-center bg-[#232226] text-white rounded-[1rem]">
+        <div class="font-subHeading text-[1.5rem] lg:text-[3rem] font-black hidden lg:w-[50%] lg:min-h-max lg:p-8 lg:flex lg:flex-col lg:justify-center lg:text-center bg-[#232226] text-highlightColor rounded-[1rem]">
           About Me
         </div>
         <!-- right side panel text: personal, experience, strongset -->
@@ -295,7 +299,7 @@
         <div id="project-container" class = " max-h-[100vh] flex flex-col gap-[1.5rem]">
           <!--Personal-->
           <a href="https://www.linkedin.com/in/ashmit-jain-386427292/">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Personal</p>
                 <div class="my-auto flex gap-3">
@@ -306,7 +310,7 @@
             </div>  
           </a>
           <!--Experience-->
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Experience</p>
                 <div class="my-auto flex gap-3">
@@ -320,7 +324,7 @@
               <span class="font-body text-[1rem] w-[80%] text-left">We developed a Machine Learning model using Python that processes and cleans your CSV files, maps string inputs, predicts passenger survivability based on their statistics, and provides a visual graph along with the model's accuracy.</span>
             </div>
            <!--Strongset-->
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-highlightColor bg-[#232226] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Strongset</p>
                 <div class="my-auto flex gap-3">
@@ -340,7 +344,7 @@
         <div class="flex flex-col gap-[1.25rem]">
           <!-- Personal div -->
           <a href="">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-transparent border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Personal</p>
               </div>
@@ -349,7 +353,7 @@
           </a>
           <!--Experience div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-transparent border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Experience</p>                
               </div>
@@ -358,7 +362,7 @@
           </a>
            <!--Strongset div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-transparent border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-highlightColor bg-transparent border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Strongset</p>                
               </div>
@@ -372,14 +376,14 @@
       <div id="text-alignment" class=" lg:text-left flex flex-col justify-center text-center">
         <div class="flex items-center">
           <img src="src/assets/images/projects.svg" class="lg:w-[35rem] p-[2.5rem] lg:px-0" alt="projects">
-          <span class="hidden lg:block text-white w-[90vw] p-[2.5rem] lg:px-[2rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
+          <span class="hidden lg:block text-highlightColor w-[90vw] p-[2.5rem] lg:px-[2rem]">My top projects so far showcase a diverse set of skills in HTML, CSS, JavaScript, Python, and design. I've built a responsive portfolio website, developed an interactive e-commerce platform, and created a dynamic to-do list app. Additionally, I've worked on a machine learning model for predictive analysis, designed an intuitive weather app, and led a comprehensive UI/UX redesign project. Each project has helped me refine my abilities and broaden my understanding of web development and design principles.
           </span>
         </div>
         <!-- new grid layout -->
         <div id="project-container" class = "grid grid-cols-1 lg:grid-cols-3 gap-10 pt-[0.75rem]">
           <!-- project 1 Div -->
           <a href="">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
                 <div class="my-auto flex gap-3">
@@ -391,7 +395,7 @@
           </a>
           <!-- project 2 div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
                 <div class="my-auto flex gap-3">
@@ -403,7 +407,7 @@
           </a>
            <!-- project 3 div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
                 <div class="my-auto flex gap-3">
@@ -417,7 +421,7 @@
           </a>
           <!-- project 1 Div -->
           <a href="">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Grow</p>
                 <div class="my-auto flex gap-3">
@@ -429,7 +433,7 @@
           </a>
           <!-- project 2 div -->
           <a href="https://github.com/ashmit27j/Titanic-Machine-Learning-from-Disaster">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Titanic ML</p>
                 <div class="my-auto flex gap-3">
@@ -441,7 +445,7 @@
           </a>
            <!-- project 3 div -->
           <a href="https://github.com/ashmit27j/project-mirage">
-            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-white bg-[#232226] border-white border-[0.1rem] rounded-[1rem]">
+            <div class="w-full min-h-[15rem] h-fit p-8 flex flex-col gap-[0.5rem] lg:text-start text-highlightColor bg-[#232226] border-highlightColor border-[0.1rem] rounded-[1rem]">
               <div class="flex place-content-between  items-center">
                 <p class="font-subHeading text-[1.5rem] lg:text-[2.5rem] font-black">Mirage</p>
                 <div class="my-auto flex gap-3">
@@ -494,21 +498,21 @@
           var mobileLink = document.getElementById("mobile-link-container");
           var linkToggleButton=document.getElementById("link-toggle-button");
           var linkDark = document.getElementById("linkDark");
-          var linkWhite = document.getElementById("linkWhite");
+          var linkhighlightColor = document.getElementById("linkhighlightColor");
           if (
             mobileLink.style.display === "none" ||
             mobileLink.style.display === ""
           ) {
             mobileLink.style.display = "block";
             linkToggleButton.style.backgroundColor = "#000";
-            linkWhite.style.display = "block";
+            linkhighlightColor.style.display = "block";
             linkDark.style.display = "none";
             
           } else if ((mobileLink.style.display = "block")) {
             mobileLink.style.display = "none";
             linkToggleButton.style.backgroundColor = "#FFF";
             linkDark.style.display = "block";
-            linkWhite.style.display = "none";
+            linkhighlightColor.style.display = "none";
           }
         });
     </script>

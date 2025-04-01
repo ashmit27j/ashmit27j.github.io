@@ -61,7 +61,7 @@ Here are some of the projects I've worked on, showcasing a blend of front-end an
 ## Education
 
 - **Current Studies**: Web Design
-
+ npx tailwindcss -i src/input.css -o dist/output.css --watch
 ---
 
 ## Contact

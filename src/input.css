@@ -9,18 +9,18 @@
 
 /* Define the Quicksand font */
 @font-face {
-  font-family: "Quicksand";
-  src: url("../assets/fonts/QuicksandVariableFontwght.ttf");
+	font-family: "Quicksand";
+	src: url("/src/assets/fonts/QuicksandVariableFontwght.ttf") format("truetype");
 }
 
 /* Define the HelveticaCompressed font */
 @font-face {
-  font-family: "HelveticaCompressed";
-  src: url("../assets/fonts/HelveticaExtraCompressed.ttf");
+	font-family: "HelveticaCompressed";
+	src: url("/src/assets/fonts/HelveticaExtraCompressed.ttf") format("truetype");
 }
 
 /* Define the Lufga font */
 @font-face {
-  font-family: "Lufga";
-  src: url("../assets/fonts/LufgaRegular.ttf");
+	font-family: "Lufga";
+	src: url("/src/assets/fonts/LufgaRegular.ttf") format("truetype");
 }

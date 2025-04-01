@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-	content: ["*.{html,js}"], // Specify the files Tailwind should scan for class names
+export default {
+	content: ["./index.html", "./src/**/*.{html,js}"], // Specify the files Tailwind should scan for class names
 	theme: {
 		extend: {
 			backgroundImage: {
@@ -28,10 +28,13 @@ module.exports = {
 			colors: {
 				// Custom colors
 				primaryBg: "#000",
-				darkModeBg: "#0C0C0C",
+				darkModeBg: "#0E0E0E",
+				darkModeBgLighter: "#191714",
 				secondaryBg: "#FFF",
 				black: "#000",
-				white: "#FFF",
+				white: "FFF",
+				highlightColor: "#DAC5A7",
+				secondaryColor: "#907c6c",
 				red: "#F00",
 			},
 			fontFamily: {
@@ -54,5 +57,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-gradients")], // Include the gradients plugin
+	plugins: [import("tailwindcss-gradients")], // Include the gradients plugin
 };
