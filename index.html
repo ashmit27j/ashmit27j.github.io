@@ -29,9 +29,10 @@
     .fade-in {
       animation: fadeIn 2s ease-in-out;
     }
+
     </style>
   </head>
-  <body class="bg-darkModeBg font-body overflow-x-hidden fade-in">
+  <body class="bg-darkModeBg glow-container font-body overflow-x-hidden fade-in">
     <header
       class="max-w-full h-fit hidden justify-center align-middle lg:flex lg:fixed lg:w-screen lg:z-50"
     >
@@ -90,7 +91,7 @@
     </div>
     <!-- mobile navbar -->
     <!-- gradient div -->
-    <div class=" lg:hidden fixed w-full h-[10rem] z-50 bottom-0 bg-gradient-to-t from-[rgb(0,0,0)] via-[rgba(0,0,0,0.9)]  to-[rgba(217,220,223,0)]">
+    <div class="glow lg:hidden fixed w-full h-[10rem] z-50 bottom-0 bg-gradient-to-t from-[rgb(0,0,0)] via-[rgba(0,0,0,0.9)]  to-[rgba(217,220,223,0)]">
       <div
       id="mobile-navbar-alignment-container"
       class="fixed z-50 bottom-[6rem] right-[1.5rem] lg:hidden "
@@ -181,40 +182,50 @@
     >
       <a href="#portfolio" class="h-[3.25rem] px-[2.25rem] rounded-full flex items-center bg-highlightColor text-black"> <span class="">Scroll To Top</span></a>
     </div>
-    <section id="portfolio" class="h-fit lg:h-[100vh] pt-[0.6rem] bg-clip-content overflow-clip text-highlightColor">
-      <!-- outer line div -->
-      <div class=" mx-[0.55rem] rounded-2xl border-2 border-secondaryColor border-opacity-30">
+    <section id="portfolio" class="h-fit lg:h-[100vh] p-[0.6rem] bg-clip-content overflow-clip text-highlightColor
+      ">
+      <div class="rounded-2xl border-2 border-secondaryColor border-opacity-30"">
+        <!-- outer line div -->
+      <!-- <div id = "outerlinediv" class=" w-fit h-full p-2 "> -->
           <!-- Will display for viewports that arent lg or xl -->
         <div id="except-lg" class="lg:hidden p-10 flex flex-col items-center">
         <span class="text-[0.8rem]">UI Designer & Web Developer</span>
-        <img src="src/assets/images/NameDark.svg" class="py-[0.5rem]" alt="My Name as an svg">
+        <p class="font-subHeading tracking-tighter text-[clamp(5rem, 5vw, 10rem)]">Ashmit Jain</p>
         <span class="text-[0.8rem]">Head of UI/UX at GDSC MPSTME</span>
         <span class="text-[0.8rem]">Employed as a UI Designer at Synoris</span>
         </div>
         <!-- will display for lg and above -->
-        <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center">
-          <div id="outer-text div" class=" p-[1.1rem] flex flex-col items-end">
-            <div class="w-fit">
-                <div id=" inner-title div" class="hidden lg:flex">
-                <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span>
-                  <div class=" w-full my-auto flex pl-[0.5rem]">
-                    <img src="src/assets/images/circle2.svg" alt="">
-                    <div class=" bg-highlightColor w-full h-[0.125rem] my-auto"></div>
-                  </div>
+        <div id="text-alignment" class=" hidden h-screen absolute w-screen z-10 p-10 text-right lg:flex flex-col lg:pr-[2rem] justify-center ">
+          <div id="outer-text div" class=" h-full p-[1.1rem] flex flex-col justify-center items-end">
+            <div class="w-fit h-">
+              <div id=" inner-title div" class="hidden lg:flex">
+                <!-- <span class=" w-fit text-nowrap text-center text-[1.2rem]">UI Designer & Web Developer</span> -->
+                <!-- <div class=" w-full my-auto flex pl-[0.5rem]">
+                  <img src="src/assets/images/circle2.svg" alt="">
+                  <div class=" bg-highlightColor w-full h-[0.125rem] my-auto"></div>
+                </div> -->
               </div>
               <span class="lg:hidden">UI Designer & Web Developer</span>
-              <!-- Old ashmit logo -->
-              <p class="font-subHeading text-[8rem] tracking-tighter">Ashmit Jain</p>
+              
+              <!-- Title Font Desktop-->
+              <div class="px-10 py-5 flex flex-col rounded-2xl border-2 border-secondaryColor border-opacity-30 ">
+                <div class="z-0 absolute">
+                  <p class="font-subHeading text-[8rem] tracking-tighter">I'm Ashmit</p>
+                </div>
+                <div id = "" class="z-1 relative pt-[8rem] bottom-text-div">
+                  <p class=" inline font-subHeading text-[8rem] tracking-tighter">a <p class="inline leading-tight font-subHeading text-[8rem] tracking-tighter">Web Developer</p></p>
+                </div>
+              </div>
               <!-- <img src="src/assets/images/NameDark.svg" class="w-[50rem] py-[2rem]" alt="My Name as an svg"> -->
           
             </div>
-            <span class="flex self-start w-full">
+            <!-- <span class="flex self-start w-full">
               <div class=" w-full my-auto flex pl-[0.5rem]">
                   <div class=" bg-highlightColor w-full h-[0.125rem] ml-[39.9rem] my-auto"></div>
                   <img src="src/assets/images/circle2.svg" alt="">
                 </div>
                   <span class="text-nowrap pl-[0.5rem] text-[1.2rem]">Employed as a UI Designer at Synoris</span>
-            </span>
+            </span> -->
             <span class="flex self-start w-full">
               <div class=" w-full my-auto flex pl-[0.5rem]">
                   <!-- <div class=" bg-black w-full h-[0.125rem] ml-[35.9rem] my-auto"></div>
@@ -223,16 +234,18 @@
                   <span class="text-nowrap pl-[0.5rem] text-[1.2rem]"></span>
             </span>
             </div>
-            <div class="flex flex-col bottom-[2rem] items-center self-end absolute">
+            <!-- <div class="flex flex-col bottom-[2rem] items-center self-end absolute">
               <img src="src/assets/images/scrollDown.svg" class="w-[1.5rem] self-end" alt="">
               <img src="src/assets/images/circle2.svg" class="w-[1rem]" alt="">
-            </div>
+            </div> -->
         </div>
         
         <div id="image-alignment-container" class=" relative z-100">
           <img src="src/assets/images/AshmitPfp(nobg).png" alt="My photo" class=" w-auto h-auto lg:w-[45rem] lg:pt-[5rem]">
         </div>
       </div>
+      </div>
+      
     </section>
     <!-- marquee bar -->
     <div class=" lg:block w-full h-fit bg-[#4e4e4e] text-start">
@@ -467,7 +480,11 @@
 
     </section>
     <script>
-
+      // const glow = document.querySelector(".glow-container .glow");
+      //         document.querySelector(".glow-container").addEventListener("mousemove", (e) => {
+      //             const { offsetX, offsetY } = e;
+      //             glow.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      //   });
       document
         .getElementById("mobile-toggle-button")
         .addEventListener("click", function () {
