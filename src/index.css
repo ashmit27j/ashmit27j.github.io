@@ -101,7 +101,7 @@ html {
   }
 
   .dot-grid {
-    background-image: radial-gradient(circle, hsl(var(--dot-color)) 1px, transparent 1px);
+    background-image: radial-gradient(circle, hsl(var(--dot-color)) 2px, transparent 2px);
     background-size: 24px 24px;
   }
 

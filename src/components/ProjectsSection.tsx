@@ -25,34 +25,34 @@ const SwiftIcon = ({ className }: { className?: string }) => (
 );
 
 const projects: Project[] = [
-  {
-    title: "Nosh",
-    description:
-      "Nosh is a cross-platform application that helps you plan meals based on your pantry. It recommends dishes, manages pantry and provides cooking instructions and helps nutrition tracking.",
-    tags: ["Swift", "SwiftUI", "Firebase"],
-    links: [{ icon: "external", url: "#" }],
-  },
-  {
-    title: "Zen",
-    description:
-      "A student productivity dashboard designed to streamline academic workflow — task management, focus sessions, and progress tracking.",
-    tags: ["ReactJS", "Tailwind CSS", "Firebase"],
-    links: [{ icon: "external", url: "#" }],
-  },
-  {
-    title: "Vibey",
-    description:
-      "A seamless music migration tool that lets you convert YouTube playlists to Spotify and vice versa — alongside a suite of other powerful music utilities to enhance your listening experience.",
-    tags: ["ReactJS", "Tailwind CSS"],
-    links: [{ icon: "external", url: "#" }],
-  },
-  {
-    title: "Death Penalty",
-    description:
-      "A fast-paced FPS set in a dystopian future. You're a human consciousness trapped in a robotic body, forced to endure deadly combat trials for the amusement of your AI overlords.",
-    tags: ["Unity", "C#", "Blender"],
-    links: [{ icon: "external", url: "#" }],
-  },
+	{
+		title: "Nosh",
+		description:
+			"Nosh is a cross-platform application that helps you plan meals based on your pantry. It recommends dishes, manages pantry and provides cooking instructions and helps nutrition tracking.",
+		tags: ["Swift", "SwiftUI", "Firebase"],
+		links: [{ icon: "external", url: "https://ashmit27j.github.io/NoshApp/" }],
+	},
+	{
+		title: "Zen",
+		description:
+			"A student productivity dashboard designed to streamline academic workflow — task management, focus sessions, and progress tracking.",
+		tags: ["ReactJS", "Tailwind CSS", "Firebase"],
+		links: [{ icon: "external", url: "#" }],
+	},
+	{
+		title: "Vibey",
+		description:
+			"A seamless music migration tool that lets you convert YouTube playlists to Spotify and vice versa — alongside a suite of other powerful music utilities to enhance your listening experience.",
+		tags: ["ReactJS", "Tailwind CSS"],
+		links: [{ icon: "external", url: "#" }],
+	},
+	{
+		title: "Death Penalty",
+		description:
+			"A fast-paced FPS set in a dystopian future. You're a human consciousness trapped in a robotic body, forced to endure deadly combat trials for the amusement of your AI overlords.",
+		tags: ["Unity", "C#", "Blender"],
+		links: [{ icon: "external", url: "#" }],
+	},
 ];
 
 const iconMap: Record<string, React.FC<{ className?: string }>> = {
